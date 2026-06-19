@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 40" fill="none" role="img" aria-label="BeOne">
+  <text
+    x="0"
+    y="30"
+    fill="#FFFFFF"
+    font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+    font-size="28"
+    font-weight="700"
+    letter-spacing="-0.02em"
+  >
+    BeOne
+  </text>
+  <circle cx="158" cy="12" r="5" fill="#27D3E0" />
+</svg>

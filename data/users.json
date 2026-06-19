@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": "cf2e71bc-9eb3-445c-bd4d-8077ba30fc0a",
+      "name": "Zachary Randles-Friedman",
+      "email": "zach@zachre.com",
+      "passwordHash": "$2b$12$Z0keYniE0Nn.hYqOUp/bS.BHK8KTlFB0PvovvFE.frZEaMPjepIBy",
+      "role": "admin",
+      "createdAt": "2026-06-13T03:08:37.853Z"
+    }
+  ]
+}

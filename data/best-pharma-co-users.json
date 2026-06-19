@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "id": "cf2e71bc-9eb3-445c-bd4d-8077ba30fc0a",
+      "name": "Zachary Randles-Friedman",
+      "email": "zach@zachre.com",
+      "passwordHash": "$2b$12$WFcp1.NcWjsfRVDvGp0P6uOcndGOl10LDF8E.XdkLtU6OyzhZMXTS",
+      "role": "admin",
+      "createdAt": "2026-06-13T03:08:37.853Z"
+    },
+    {
+      "id": "8a05ecc9-1cb2-49e4-8026-264ed0c8b271",
+      "name": "zachey",
+      "email": "zachary@zachre.com",
+      "username": "zachtest222",
+      "passwordHash": "$2b$12$uFhh0IXRLWJeRJ2kHnmZ9.Aqk1gyi0njXSgbmxwtgBtgqlKvxMobO",
+      "role": "user",
+      "createdAt": "2026-06-15T22:00:42.280Z"
+    }
+  ]
+}

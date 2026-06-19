@@ -1,0 +1,252 @@
+{
+  "meta": {
+    "syncedAt": "2026-06-19T16:08:53.466Z",
+    "companySlug": "elena-marshall",
+    "channels": {
+      "linkedin": {
+        "postCount": 6,
+        "followers": 185000,
+        "provider": "seed",
+        "dataSource": "seed",
+        "syncedAt": "2026-06-19T16:08:53.466Z"
+      },
+      "x": {
+        "postCount": 6,
+        "followers": 92000,
+        "provider": "seed",
+        "dataSource": "seed",
+        "syncedAt": "2026-06-19T16:08:53.466Z"
+      }
+    }
+  },
+  "posts": [
+    {
+      "id": "em-li-1",
+      "platform": "linkedin",
+      "category": "educational",
+      "storyBeat": "Scientific Innovation",
+      "type": "organic",
+      "publishedAt": "2026-05-08T16:08:53.466Z",
+      "caption": "Honored to share our Q1 results today: $14.2B in revenue, driven by colleagues who put patients at the center of every decision. Thank you to the Best Pharma team worldwide.",
+      "imageUrl": "https://picsum.photos/seed/founder-em-li-1/600/600",
+      "metrics": {
+        "impressions": 119000,
+        "reach": 85000,
+        "likes": 3825,
+        "comments": 459,
+        "shares": 306,
+        "saves": 0,
+        "clicks": 1785
+      }
+    },
+    {
+      "id": "em-li-2",
+      "platform": "linkedin",
+      "category": "educational",
+      "storyBeat": "Scientific Innovation",
+      "type": "organic",
+      "publishedAt": "2026-05-15T16:08:53.466Z",
+      "caption": "Priority Review for BPC-401 is a milestone years in the making. To every patient and investigator who made this possible — we don't take your trust lightly.",
+      "imageUrl": "https://picsum.photos/seed/founder-em-li-2/600/600",
+      "metrics": {
+        "impressions": 168000,
+        "reach": 120000,
+        "likes": 5400,
+        "comments": 648,
+        "shares": 432,
+        "saves": 0,
+        "clicks": 2520
+      }
+    },
+    {
+      "id": "em-li-3",
+      "platform": "linkedin",
+      "category": "educational",
+      "storyBeat": "Scientific Innovation",
+      "type": "organic",
+      "publishedAt": "2026-05-22T16:08:53.466Z",
+      "caption": "Spent the morning with our Patient Advisory Council. Their lived experience sharpens our trials, our access programs, and our accountability.",
+      "imageUrl": "https://picsum.photos/seed/founder-em-li-3/600/600",
+      "metrics": {
+        "impressions": 93800,
+        "reach": 67000,
+        "likes": 3015,
+        "comments": 361,
+        "shares": 241,
+        "saves": 0,
+        "clicks": 1407
+      }
+    },
+    {
+      "id": "em-li-4",
+      "platform": "linkedin",
+      "category": "educational",
+      "storyBeat": "Scientific Innovation",
+      "type": "organic",
+      "publishedAt": "2026-05-29T16:08:53.466Z",
+      "caption": "ASCO week reminds me why I chose this industry: science that changes outcomes, communicated with honesty and respect for the clinicians who deliver care.",
+      "imageUrl": "https://picsum.photos/seed/founder-em-li-4/600/600",
+      "metrics": {
+        "impressions": 131600,
+        "reach": 94000,
+        "likes": 4230,
+        "comments": 507,
+        "shares": 338,
+        "saves": 0,
+        "clicks": 1974
+      }
+    },
+    {
+      "id": "em-li-5",
+      "platform": "linkedin",
+      "category": "educational",
+      "storyBeat": "People & Culture",
+      "type": "organic",
+      "publishedAt": "2026-06-05T16:08:53.466Z",
+      "caption": "Proud of our Great Place to Work certification. Culture isn't perks — it's psychological safety to challenge assumptions and do rigorous science.",
+      "imageUrl": "https://picsum.photos/seed/founder-em-li-5/600/600",
+      "metrics": {
+        "impressions": 109200,
+        "reach": 78000,
+        "likes": 3510,
+        "comments": 421,
+        "shares": 280,
+        "saves": 0,
+        "clicks": 1638
+      }
+    },
+    {
+      "id": "em-li-6",
+      "platform": "linkedin",
+      "category": "educational",
+      "storyBeat": "Scientific Innovation",
+      "type": "organic",
+      "publishedAt": "2026-06-12T16:08:53.466Z",
+      "caption": "Rare diseases affect 300 million people globally. We will keep investing where markets are small but human need is enormous.",
+      "imageUrl": "https://picsum.photos/seed/founder-em-li-6/600/600",
+      "metrics": {
+        "impressions": 78400,
+        "reach": 56000,
+        "likes": 2520,
+        "comments": 302,
+        "shares": 201,
+        "saves": 0,
+        "clicks": 1176
+      }
+    },
+    {
+      "id": "em-x-1",
+      "platform": "x",
+      "category": "educational",
+      "storyBeat": "People & Culture",
+      "type": "organic",
+      "publishedAt": "2026-05-10T16:08:53.466Z",
+      "caption": "Q1 2026: strong results, stronger purpose. Grateful to Team Best Pharma. #PatientsFirst",
+      "imageUrl": "https://picsum.photos/seed/founder-em-x-1/600/600",
+      "metrics": {
+        "impressions": 58800,
+        "reach": 42000,
+        "likes": 1890,
+        "comments": 226,
+        "shares": 340,
+        "saves": 0,
+        "clicks": 882
+      }
+    },
+    {
+      "id": "em-x-2",
+      "platform": "x",
+      "category": "educational",
+      "storyBeat": "Scientific Innovation",
+      "type": "organic",
+      "publishedAt": "2026-05-18T16:08:53.466Z",
+      "caption": "BPC-401 Priority Review — a step closer for patients with advanced NSCLC. Science + speed, never science vs. safety.",
+      "imageUrl": "https://picsum.photos/seed/founder-em-x-2/600/600",
+      "metrics": {
+        "impressions": 81200,
+        "reach": 58000,
+        "likes": 2610,
+        "comments": 313,
+        "shares": 469,
+        "saves": 0,
+        "clicks": 1218
+      }
+    },
+    {
+      "id": "em-x-3",
+      "platform": "x",
+      "category": "educational",
+      "storyBeat": "Scientific Innovation",
+      "type": "organic",
+      "publishedAt": "2026-05-26T16:08:53.466Z",
+      "caption": "Access isn't an afterthought. Best Care Access now in 14 new markets because delays cost lives.",
+      "imageUrl": "https://picsum.photos/seed/founder-em-x-3/600/600",
+      "metrics": {
+        "impressions": 49000,
+        "reach": 35000,
+        "likes": 1575,
+        "comments": 189,
+        "shares": 283,
+        "saves": 0,
+        "clicks": 735
+      }
+    },
+    {
+      "id": "em-x-4",
+      "platform": "x",
+      "category": "educational",
+      "storyBeat": "Scientific Innovation",
+      "type": "organic",
+      "publishedAt": "2026-06-03T16:08:53.466Z",
+      "caption": "At ASCO with teams sharing data that matters. Congress season is our runway to earn clinician trust.",
+      "imageUrl": "https://picsum.photos/seed/founder-em-x-4/600/600",
+      "metrics": {
+        "impressions": 65800,
+        "reach": 47000,
+        "likes": 2115,
+        "comments": 253,
+        "shares": 380,
+        "saves": 0,
+        "clicks": 987
+      }
+    },
+    {
+      "id": "em-x-5",
+      "platform": "x",
+      "category": "educational",
+      "storyBeat": "Scientific Innovation",
+      "type": "organic",
+      "publishedAt": "2026-06-10T16:08:53.466Z",
+      "caption": "Leaders listen first. Today's Patient Advisory Council session was a masterclass in humility.",
+      "imageUrl": "https://picsum.photos/seed/founder-em-x-5/600/600",
+      "metrics": {
+        "impressions": 43400,
+        "reach": 31000,
+        "likes": 1395,
+        "comments": 167,
+        "shares": 251,
+        "saves": 0,
+        "clicks": 651
+      }
+    },
+    {
+      "id": "em-x-6",
+      "platform": "x",
+      "category": "educational",
+      "storyBeat": "Corporate Citizenship",
+      "type": "organic",
+      "publishedAt": "2026-06-16T16:08:53.466Z",
+      "caption": "Congratulations to colleagues on our ESG report — transparency builds trust with patients, payers, and communities.",
+      "imageUrl": "https://picsum.photos/seed/founder-em-x-6/600/600",
+      "metrics": {
+        "impressions": 40600,
+        "reach": 29000,
+        "likes": 1305,
+        "comments": 156,
+        "shares": 234,
+        "saves": 0,
+        "clicks": 609
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "best-pharma-co-digitaltest",
+  "workers_dev": true,
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2025-06-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "best-pharma-co-digitaltest"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  },
+  "kv_namespaces": [
+    {
+      "binding": "APP_DATA_KV",
+      "id": "REPLACE_WITH_PRODUCTION_KV_ID",
+      "preview_id": "REPLACE_WITH_PREVIEW_KV_ID"
+    }
+  ],
+  "vars": {
+    "CLOUDFLARE_WORKERS": "1",
+    "AUTH_ADMIN_EMAILS": "zach@zachre.com,zach@everythingandanythingpodcast.com",
+    "LINKEDIN_DATA_PROVIDER": "seed",
+    "LINKEDIN_COMPANY_SLUG": "best-pharma-co",
+    "SOCIAL_INSTAGRAM_HANDLE": "bestpharmacoco",
+    "SOCIAL_FACEBOOK_URL": "https://www.facebook.com/BestPharmaCo/",
+    "SOCIAL_X_HANDLE": "BestPharmaCo",
+    "SOCIAL_YOUTUBE_CHANNEL": "@BestPharmaCo",
+    "SOCIAL_TIKTOK_HANDLE": "bestpharmacoco"
+  }
+}

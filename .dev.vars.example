@@ -1,0 +1,15 @@
+# Local secrets — do not commit
+NEXTJS_ENV=development
+AUTH_SECRET=mhD/5P74g0MuOmGgjftVj26bn2dp5w8RziT69fZ0o94=
+AUTH_URL=http://localhost:3004
+
+# Use seed data for demos (no live API keys required)
+LINKEDIN_DATA_PROVIDER=seed
+
+# Best Pharma Co. social channels (defaults match src/lib/client.ts)
+LINKEDIN_COMPANY_SLUG=best-pharma-co
+SOCIAL_INSTAGRAM_HANDLE=bestpharmacoco
+SOCIAL_FACEBOOK_URL=https://www.facebook.com/BestPharmaCo/
+SOCIAL_X_HANDLE=BestPharmaCo
+SOCIAL_YOUTUBE_CHANNEL=@BestPharmaCo
+SOCIAL_TIKTOK_HANDLE=bestpharmacoco

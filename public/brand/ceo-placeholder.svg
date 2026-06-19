@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" fill="none" role="img" aria-label="Elena Marshall">
+  <rect width="300" height="300" fill="#E8F4FA"/>
+  <circle cx="150" cy="120" r="56" fill="#0093D0"/>
+  <path d="M60 270c18-48 58-78 90-78s72 30 90 78" fill="#003865"/>
+  <text x="150" y="292" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#5A7285">Elena Marshall · Demo</text>
+</svg>
