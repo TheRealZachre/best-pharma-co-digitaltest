@@ -141,7 +141,7 @@ export function PeriodMetricsChart({
                   <LabelList
                     dataKey="engagementRate"
                     position="top"
-                    formatter={(value: number) => formatPercent(value)}
+                    formatter={(value) => formatPercent(Number(value))}
                     className="fill-brand-ink text-[10px] font-medium"
                   />
                   {chartData.map((entry) => (
