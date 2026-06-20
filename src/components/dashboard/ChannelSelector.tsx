@@ -5,6 +5,7 @@ import {
   ANALYTICS_CHANNELS_COOKIE,
   ANALYTICS_CHANNELS_STORAGE_KEY,
   CHANNEL_LABELS,
+  channelsSelectionNeedsUpgrade,
   parseAnalyticsChannels,
 } from "@/lib/analytics/channel-selection";
 import { ANALYTICS_CHANNEL_PLATFORMS } from "@/lib/analytics/channels";
@@ -14,11 +15,6 @@ import clsx from "clsx";
 interface ChannelSelectorProps {
   channelSources?: Partial<Record<Platform, "live" | "seed">>;
   onChange?: (channels: Platform[]) => void;
-}
-
-function readInitialChannels(): Platform[] {
-  const stored = localStorage.getItem(ANALYTICS_CHANNELS_STORAGE_KEY);
-  return parseAnalyticsChannels(stored);
 }
 
 function persistSelectedChannels(channels: Platform[]) {
@@ -36,7 +32,25 @@ export function ChannelSelector({
   ]);
 
   useEffect(() => {
-    const initial = readInitialChannels();
+    const stored = localStorage.getItem(ANALYTICS_CHANNELS_STORAGE_KEY);
+    let raw: Platform[] = [];
+    if (stored) {
+      try {
+        const parsed = JSON.parse(stored) as unknown;
+        if (Array.isArray(parsed)) {
+          raw = parsed.filter((platform): platform is Platform =>
+            ANALYTICS_CHANNEL_PLATFORMS.includes(platform as Platform)
+          );
+        }
+      } catch {
+        // ignore invalid storage
+      }
+    }
+
+    const initial = parseAnalyticsChannels(stored);
+    if (raw.length > 0 && channelsSelectionNeedsUpgrade(raw)) {
+      persistSelectedChannels(initial);
+    }
     setSelected(initial);
     onChange?.(initial);
   }, [onChange]);

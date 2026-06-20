@@ -10,6 +10,7 @@ import { CompetitorBenchmark } from "@/components/dashboard/CompetitorBenchmark"
 import { WhatWorkedAnalysis } from "@/components/dashboard/WhatWorkedAnalysis";
 import { AudienceGrowthChart } from "@/components/dashboard/AudienceGrowthChart";
 import { PaidSocialAnalytics } from "@/components/analytics/PaidSocialAnalytics";
+import { ReportChannelOverview } from "@/components/analytics/ReportChannelOverview";
 import { NarrativeSection } from "@/components/narrative/NarrativeSection";
 import { QuarterlyMonthTrend } from "@/components/narrative/QuarterlyMonthTrend";
 import { WeeklyPerformancePanel } from "@/components/narrative/WeeklyPerformancePanel";
@@ -33,7 +34,7 @@ import {
 import { Lightbulb, Target, TrendingUp } from "lucide-react";
 
 export default async function QuarterlyReportPage() {
-  const [{ meta, channelSources }, selectedChannels] = await Promise.all([
+  const [{ meta, channelSources, channelFollowers }, selectedChannels] = await Promise.all([
     getMultiChannelPosts(),
     getSelectedAnalyticsChannels(),
   ]);
@@ -120,6 +121,14 @@ export default async function QuarterlyReportPage() {
         <PaidSocialAnalytics
           posts={posts}
           subtitle="Quarterly paid social spend and efficiency across LinkedIn, Instagram, Facebook, X, YouTube, and TikTok."
+        />
+
+        <ReportChannelOverview
+          posts={posts}
+          channelSources={channelSources}
+          channelFollowers={channelFollowers}
+          selectedChannels={selectedChannels}
+          subtitle="Quarterly performance across all six corporate channels"
         />
 
         <QuarterlyMonthTrend months={quarterMonths} />

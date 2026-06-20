@@ -29,16 +29,29 @@ function parseChannelArray(value: string): Platform[] | null {
   }
 }
 
+/** Platforms added after initial launch — merged into saved selections once. */
+const NEW_ANALYTICS_PLATFORMS: Platform[] = ["tiktok"];
+
+function mergeWithAvailablePlatforms(selected: Platform[]): Platform[] {
+  const merged = [...selected];
+  for (const platform of NEW_ANALYTICS_PLATFORMS) {
+    if (!merged.includes(platform)) {
+      merged.push(platform);
+    }
+  }
+  return ANALYTICS_CHANNEL_PLATFORMS.filter((platform) => merged.includes(platform));
+}
+
 export function parseAnalyticsChannels(raw?: string | null): Platform[] {
   if (!raw) return [...ANALYTICS_CHANNEL_PLATFORMS];
 
   const direct = parseChannelArray(raw);
-  if (direct) return direct;
+  if (direct) return mergeWithAvailablePlatforms(direct);
 
   try {
     const decoded = decodeURIComponent(raw);
     const fromCookie = parseChannelArray(decoded);
-    if (fromCookie) return fromCookie;
+    if (fromCookie) return mergeWithAvailablePlatforms(fromCookie);
   } catch {
     // fall through to default
   }
@@ -60,4 +73,8 @@ export function formatChannelList(channels: Platform[]): string {
     return "all channels";
   }
   return channels.map((channel) => CHANNEL_LABELS[channel]).join(", ");
+}
+
+export function channelsSelectionNeedsUpgrade(stored: Platform[]): boolean {
+  return NEW_ANALYTICS_PLATFORMS.some((platform) => !stored.includes(platform));
 }

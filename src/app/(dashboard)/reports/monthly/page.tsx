@@ -11,6 +11,7 @@ import { OrganicPaidBreakdown } from "@/components/dashboard/OrganicPaidBreakdow
 import { AudienceGrowthChart } from "@/components/dashboard/AudienceGrowthChart";
 import { SpendPerformanceChart } from "@/components/dashboard/SpendPerformanceChart";
 import { PaidSocialAnalytics } from "@/components/analytics/PaidSocialAnalytics";
+import { ReportChannelOverview } from "@/components/analytics/ReportChannelOverview";
 import { MonthComparisonPanel } from "@/components/narrative/MonthComparisonPanel";
 import { NarrativeSection } from "@/components/narrative/NarrativeSection";
 import { SplitWeeklyPerformancePanel } from "@/components/narrative/SplitWeeklyPerformancePanel";
@@ -36,7 +37,7 @@ import {
 } from "@/lib/metrics";
 
 export default async function MonthlyReportPage() {
-  const [{ meta, channelSources }, selectedChannels] = await Promise.all([
+  const [{ meta, channelSources, channelFollowers }, selectedChannels] = await Promise.all([
     getMultiChannelPosts(),
     getSelectedAnalyticsChannels(),
   ]);
@@ -117,6 +118,14 @@ export default async function MonthlyReportPage() {
         <PaidSocialAnalytics
           posts={posts}
           subtitle={`Paid social performance for ${currentMonth.label} across all corporate channels.`}
+        />
+
+        <ReportChannelOverview
+          posts={posts}
+          channelSources={channelSources}
+          channelFollowers={channelFollowers}
+          selectedChannels={selectedChannels}
+          subtitle={`All corporate channels including TikTok · ${currentMonth.label}`}
         />
 
         <MonthComparisonPanel current={currentMonth} prior={priorMonth} />

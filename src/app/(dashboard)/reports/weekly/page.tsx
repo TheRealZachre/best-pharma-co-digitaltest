@@ -6,6 +6,7 @@ import { ExportButtons } from "@/components/dashboard/ExportButtons";
 import { ReportStats } from "@/components/dashboard/ReportStats";
 import { ReportPostsGrid } from "@/components/dashboard/ReportPostsGrid";
 import { PaidSocialAnalytics } from "@/components/analytics/PaidSocialAnalytics";
+import { ReportChannelOverview } from "@/components/analytics/ReportChannelOverview";
 import { NarrativeSection } from "@/components/narrative/NarrativeSection";
 import { WeekComparisonPanel } from "@/components/narrative/WeekComparisonPanel";
 import { groupByWeek, summarizeWeekBuckets } from "@/lib/narrative/aggregate";
@@ -23,7 +24,7 @@ import {
 } from "@/lib/data";
 
 export default async function WeeklyReportPage() {
-  const [{ meta, channelSources }, selectedChannels] = await Promise.all([
+  const [{ meta, channelSources, channelFollowers }, selectedChannels] = await Promise.all([
     getMultiChannelPosts(),
     getSelectedAnalyticsChannels(),
   ]);
@@ -102,6 +103,13 @@ export default async function WeeklyReportPage() {
         <PaidSocialAnalytics
           posts={posts}
           subtitle="Paid and boosted posts in the rolling 7-day window across all corporate channels."
+        />
+
+        <ReportChannelOverview
+          posts={posts}
+          channelSources={channelSources}
+          channelFollowers={channelFollowers}
+          selectedChannels={selectedChannels}
         />
 
         <WeekComparisonPanel
