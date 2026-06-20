@@ -5,3 +5,5 @@ const isCi =
 if (process.env.CF_PAGES || process.env.WORKERS_CI || isCi) {
   process.exit(0);
 }
+
+await import("./setup-local-env.mjs");

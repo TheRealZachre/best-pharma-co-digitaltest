@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev --port 3004",
     "postinstall": "node scripts/postinstall.mjs",
+    "setup:local-env": "node scripts/setup-local-env.mjs",
     "dev:analytics": "echo \"Analytics moved to https://github.com/TheRealZachre/beone-analytics — run npm run dev there.\"",
     "dev:all": "npm run dev",
     "build": "bash scripts/build.sh",
