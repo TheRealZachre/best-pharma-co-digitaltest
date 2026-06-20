@@ -11,6 +11,8 @@ const BEST_PHARMA_SEED: RawLinkedInPost[] = [
     reactions: 412,
     comments: 18,
     reposts: 67,
+    deliveryType: "paid",
+    spend: 3800,
   },
   {
     id: "bpc-li-2",
@@ -21,6 +23,8 @@ const BEST_PHARMA_SEED: RawLinkedInPost[] = [
     reactions: 891,
     comments: 34,
     reposts: 142,
+    deliveryType: "paid",
+    spend: 5200,
   },
   {
     id: "bpc-li-3",
@@ -41,6 +45,8 @@ const BEST_PHARMA_SEED: RawLinkedInPost[] = [
     reactions: 278,
     comments: 9,
     reposts: 41,
+    deliveryType: "boosted",
+    spend: 1650,
   },
   {
     id: "bpc-li-5",
@@ -81,6 +87,8 @@ const BEST_PHARMA_SEED: RawLinkedInPost[] = [
     reactions: 445,
     comments: 31,
     reposts: 52,
+    deliveryType: "boosted",
+    spend: 1240,
   },
   {
     id: "bpc-li-9",
@@ -111,6 +119,8 @@ const BEST_PHARMA_SEED: RawLinkedInPost[] = [
     reactions: 156,
     comments: 8,
     reposts: 15,
+    deliveryType: "paid",
+    spend: 2900,
   },
   {
     id: "bpc-li-12",
@@ -121,6 +131,8 @@ const BEST_PHARMA_SEED: RawLinkedInPost[] = [
     reactions: 534,
     comments: 19,
     reposts: 44,
+    deliveryType: "paid",
+    spend: 2100,
   },
 ];
 

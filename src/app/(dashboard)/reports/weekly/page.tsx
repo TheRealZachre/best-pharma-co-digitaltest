@@ -5,6 +5,7 @@ import { ReportDataBanner } from "@/components/dashboard/ReportDataBanner";
 import { ExportButtons } from "@/components/dashboard/ExportButtons";
 import { ReportStats } from "@/components/dashboard/ReportStats";
 import { ReportPostsGrid } from "@/components/dashboard/ReportPostsGrid";
+import { PaidSocialAnalytics } from "@/components/analytics/PaidSocialAnalytics";
 import { NarrativeSection } from "@/components/narrative/NarrativeSection";
 import { WeekComparisonPanel } from "@/components/narrative/WeekComparisonPanel";
 import { groupByWeek, summarizeWeekBuckets } from "@/lib/narrative/aggregate";
@@ -96,6 +97,13 @@ export default async function WeeklyReportPage() {
           selectedChannels={selectedChannels}
         />
 
+        <ReportStats summary={summary} />
+
+        <PaidSocialAnalytics
+          posts={posts}
+          subtitle="Paid and boosted posts in the rolling 7-day window across all corporate channels."
+        />
+
         <WeekComparisonPanel
           current={{
             weeks: currentWeeks,
@@ -115,8 +123,6 @@ export default async function WeeklyReportPage() {
           arcTitle={`${brand.name} narrative arc — this week vs prior week`}
           subtitle="Rolling two-week view. Hover any node to see the post, story beat, and engagement score."
         />
-
-        <ReportStats summary={summary} />
 
         <ReportPostsGrid
           posts={posts}

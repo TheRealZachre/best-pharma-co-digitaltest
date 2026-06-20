@@ -79,6 +79,13 @@ async function main() {
           dataSource: "seed",
           syncedAt,
         },
+        tiktok: {
+          postCount: channelPosts.filter((p) => p.platform === "tiktok").length,
+          followers: 250000,
+          provider: "seed",
+          dataSource: "seed",
+          syncedAt,
+        },
       },
     },
     posts: allPosts,

@@ -9,6 +9,7 @@ import { CategoryRanking } from "@/components/dashboard/CategoryRanking";
 import { CompetitorBenchmark } from "@/components/dashboard/CompetitorBenchmark";
 import { WhatWorkedAnalysis } from "@/components/dashboard/WhatWorkedAnalysis";
 import { AudienceGrowthChart } from "@/components/dashboard/AudienceGrowthChart";
+import { PaidSocialAnalytics } from "@/components/analytics/PaidSocialAnalytics";
 import { NarrativeSection } from "@/components/narrative/NarrativeSection";
 import { QuarterlyMonthTrend } from "@/components/narrative/QuarterlyMonthTrend";
 import { WeeklyPerformancePanel } from "@/components/narrative/WeeklyPerformancePanel";
@@ -114,6 +115,13 @@ export default async function QuarterlyReportPage() {
           selectedChannels={selectedChannels}
         />
 
+        <ReportStats summary={summary} />
+
+        <PaidSocialAnalytics
+          posts={posts}
+          subtitle="Quarterly paid social spend and efficiency across LinkedIn, Instagram, Facebook, X, YouTube, and TikTok."
+        />
+
         <QuarterlyMonthTrend months={quarterMonths} />
 
         <WeeklyPerformancePanel
@@ -165,8 +173,6 @@ export default async function QuarterlyReportPage() {
             />
           </div>
         </div>
-
-        <ReportStats summary={summary} />
 
         <div className="grid gap-6 lg:grid-cols-2">
           <CategoryRanking categories={categories} />

@@ -117,9 +117,14 @@ export async function getMultiChannelPosts(): Promise<{
     const livePlatforms = ANALYTICS_PLATFORMS.filter(
       (platform) => channelSources[platform] === "live"
     );
+    const platformsInCache = new Set(
+      socialCache.posts.map((post) => post.platform)
+    );
 
     const seedPosts = generateChannelSeedPosts().filter(
-      (post) => !livePlatforms.includes(post.platform as SocialChannel)
+      (post) =>
+        !livePlatforms.includes(post.platform as SocialChannel) &&
+        !platformsInCache.has(post.platform)
     );
 
     const posts = [...socialCache.posts, ...seedPosts].sort(
@@ -168,6 +173,7 @@ export async function getMultiChannelPosts(): Promise<{
       facebook: "seed",
       x: "seed",
       youtube: "seed",
+      tiktok: "seed",
     },
     channelFollowers: linkedInFollowers,
     meta: meta
@@ -259,8 +265,8 @@ export function buildReportSummary(posts: SocialPost[]): ReportSummary {
     organicPosts: organic.length,
     paidPosts: paid.length,
     totalSpend,
-    avgEngagementRate: avgER,
-    avgCTR,
+    avgEngagementRate: Math.round(avgER * 10) / 10,
+    avgCTR: Math.round(avgCTR * 10) / 10,
     totalReach: posts.reduce((s, p) => s + p.metrics.reach, 0),
     totalImpressions: posts.reduce((s, p) => s + p.metrics.impressions, 0),
     audienceGrowth: latest.followers - previous.followers,

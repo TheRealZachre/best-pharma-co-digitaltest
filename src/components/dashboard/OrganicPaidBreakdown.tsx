@@ -2,6 +2,7 @@
 
 import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
 import type { ReportSummary } from "@/lib/types";
+import { formatCurrency } from "@/lib/metrics";
 
 interface OrganicPaidBreakdownProps {
   summary: ReportSummary;
@@ -20,7 +21,9 @@ export function OrganicPaidBreakdown({ summary }: OrganicPaidBreakdownProps) {
       <h3 className="text-base font-semibold text-brand-ink">
         Organic vs. Paid
       </h3>
-      <p className="mt-1 text-sm text-brand-muted">Post distribution by type</p>
+      <p className="mt-1 text-sm text-brand-muted">
+        Post distribution by type · {formatCurrency(summary.totalSpend)} total spend
+      </p>
 
       <div className="mt-4 flex items-center gap-6">
         <div className="h-40 w-40">

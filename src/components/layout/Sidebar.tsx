@@ -15,6 +15,7 @@ import {
   Image as ImageIcon,
   Info,
   Layers,
+  Music2,
   Play,
   Share2,
   Shield,
@@ -27,6 +28,8 @@ import { BrandLogo } from "@/components/brand/BrandLogo";
 import { UserMenu } from "@/components/auth/UserMenu";
 import { BRAND_ASSETS } from "@/lib/brand";
 import { POWERED_BY_NAME } from "@/lib/company";
+import { ANALYTICS_CHANNELS } from "@/lib/analytics/channels";
+import type { Platform } from "@/lib/types";
 import type { SessionUserDisplay } from "@/lib/auth/session-user";
 
 interface NavLink {
@@ -107,6 +110,23 @@ const founderSection: NavSection = {
   ],
 };
 
+const CHANNEL_NAV_ICONS: Record<Platform, LucideIcon> = {
+  linkedin: Share2,
+  instagram: ImageIcon,
+  facebook: Users,
+  x: AtSign,
+  youtube: Play,
+  tiktok: Music2,
+};
+
+const analyticsChannelLinks: NavLink[] = ANALYTICS_CHANNELS.filter(
+  (channel) => channel.platform
+).map((channel) => ({
+  href: channel.href,
+  label: channel.label,
+  icon: CHANNEL_NAV_ICONS[channel.platform!],
+}));
+
 const analyticsSection: NavSection = {
   id: "analytics",
   label: "Corporate",
@@ -118,11 +138,7 @@ const analyticsSection: NavSection = {
       icon: Layers,
       exact: true,
     },
-    { href: "/reports/channels/linkedin", label: "LinkedIn", icon: Share2 },
-    { href: "/reports/channels/instagram", label: "Instagram", icon: ImageIcon },
-    { href: "/reports/channels/facebook", label: "Facebook", icon: Users },
-    { href: "/reports/channels/x", label: "X", icon: AtSign },
-    { href: "/reports/channels/youtube", label: "YouTube", icon: Play },
+    ...analyticsChannelLinks,
     { href: "/reports/weekly", label: "Weekly Report", icon: Calendar },
     { href: "/reports/monthly", label: "Monthly Report", icon: CalendarDays },
     {

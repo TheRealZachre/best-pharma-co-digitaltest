@@ -6,6 +6,7 @@ import { ChannelOverviewGrid } from "@/components/analytics/ChannelOverviewGrid"
 import { ChannelStatsRow } from "@/components/analytics/ChannelStatsRow";
 import { DataSyncPanel } from "@/components/dashboard/DataSyncPanel";
 import { ReportPostsGrid } from "@/components/dashboard/ReportPostsGrid";
+import { PaidSocialAnalytics } from "@/components/analytics/PaidSocialAnalytics";
 import {
   getAlignedMonthPeriodPosts,
   getPostDateRangeLabel,
@@ -150,6 +151,11 @@ export default async function AllChannelsPage() {
           </div>
           <ChannelOverviewGrid channels={currentPeriodChannels} />
         </section>
+
+        <PaidSocialAnalytics
+          posts={posts}
+          subtitle="Paid and boosted delivery mix, spend efficiency, and channel-level performance for the loaded dataset."
+        />
 
         <ReportPostsGrid
           posts={posts}

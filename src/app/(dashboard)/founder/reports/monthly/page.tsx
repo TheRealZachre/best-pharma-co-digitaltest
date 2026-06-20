@@ -107,6 +107,8 @@ export default async function FounderMonthlyReportPage() {
           selectedChannels={FOUNDER_PLATFORMS}
         />
 
+        <ReportStats summary={summary} />
+
         <MonthComparisonPanel current={currentMonth} prior={priorMonth} />
 
         <SplitWeeklyPerformancePanel
@@ -128,8 +130,6 @@ export default async function FounderMonthlyReportPage() {
           arcTitle={`${brand.name} narrative arc — current & prior month`}
           subtitle="Every post mapped by date and engagement intensity, colored by story beat."
         />
-
-        <ReportStats summary={summary} />
 
         <div className="grid gap-6 lg:grid-cols-2">
           <OrganicPaidBreakdown summary={summary} />

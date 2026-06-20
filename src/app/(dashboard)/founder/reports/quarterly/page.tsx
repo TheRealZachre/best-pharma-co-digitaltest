@@ -116,6 +116,8 @@ export default async function FounderQuarterlyReportPage() {
           selectedChannels={FOUNDER_PLATFORMS}
         />
 
+        <ReportStats summary={summary} />
+
         <QuarterlyMonthTrend months={quarterMonths} />
 
         <WeeklyPerformancePanel
@@ -167,8 +169,6 @@ export default async function FounderQuarterlyReportPage() {
             />
           </div>
         </div>
-
-        <ReportStats summary={summary} />
 
         <CategoryRanking categories={categories} />
 

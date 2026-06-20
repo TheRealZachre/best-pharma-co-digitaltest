@@ -5,6 +5,7 @@ import {
   BarChart,
   CartesianGrid,
   Cell,
+  LabelList,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -41,7 +42,7 @@ export function PeriodMetricsChart({
 }: PeriodMetricsChartProps) {
   const shellClass =
     variant === "current"
-      ? "border-indigo-200 bg-brand-indigo/8/40"
+      ? "border-indigo-200 bg-brand-indigo/10"
       : "border-brand-ink/10 bg-brand-off-white/60";
   const titleClass =
     variant === "current" ? "text-brand-indigo" : "text-brand-muted";
@@ -75,11 +76,14 @@ export function PeriodMetricsChart({
 
       {hasPosts ? (
         <>
-          <p className="mt-3 text-sm text-brand-muted">
+          <p className="mt-3 text-2xl font-semibold tracking-tight text-brand-ink">
+            {formatPercent(avgEngagementRate)}
+          </p>
+          <p className="mt-1 text-sm text-brand-muted">
             {postCount} posts
             {avgReactions !== undefined && ` · avg ${avgReactions} reactions`}
-            {" · "}
-            {formatPercent(avgEngagementRate)} avg ER · score {avgEngagementScore}
+            {" · score "}
+            {avgEngagementScore}
           </p>
 
           <p className="mt-3 text-xs font-medium uppercase tracking-wide text-brand-muted">
@@ -134,6 +138,12 @@ export function PeriodMetricsChart({
                   radius={[4, 4, 0, 0]}
                   maxBarSize={48}
                 >
+                  <LabelList
+                    dataKey="engagementRate"
+                    position="top"
+                    formatter={(value: number) => formatPercent(value)}
+                    className="fill-brand-ink text-[10px] font-medium"
+                  />
                   {chartData.map((entry) => (
                     <Cell key={entry.label} fill={barColor} />
                   ))}

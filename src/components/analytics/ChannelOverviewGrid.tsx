@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import type { ChannelSummary } from "@/lib/types";
-import { formatNumber, formatPercent } from "@/lib/metrics";
+import { formatNumber, formatPercent, formatCurrency } from "@/lib/metrics";
 import { metricDefinition } from "@/lib/metric-definitions";
 import { MetricLabel } from "@/components/dashboard/MetricLabel";
 import { getChannelConfigByPlatform } from "@/lib/analytics/channels";
@@ -104,12 +104,14 @@ export function ChannelOverviewGrid({ channels, hrefPrefix = "/reports/channels"
               </div>
               <div>
                 <dt className="text-brand-muted">
-                  <MetricLabel definition={metricDefinition("impressions")}>
-                    Impressions
+                  <MetricLabel definition={metricDefinition("totalSpend")}>
+                    Paid spend
                   </MetricLabel>
                 </dt>
                 <dd className="font-semibold text-brand-ink">
-                  {formatNumber(channel.totalImpressions)}
+                  {channel.totalSpend > 0
+                    ? formatCurrency(channel.totalSpend)
+                    : "—"}
                 </dd>
               </div>
             </dl>

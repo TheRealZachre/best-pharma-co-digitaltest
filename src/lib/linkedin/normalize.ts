@@ -1,6 +1,6 @@
 import { inferStoryBeat } from "@/lib/narrative/beats";
 import { clicksFromImpressions } from "@/lib/metrics";
-import type { ContentCategory, SocialPost } from "@/lib/types";
+import type { ContentCategory, PostType, SocialPost } from "@/lib/types";
 import type { RawLinkedInPost } from "./types";
 
 const CATEGORY_RULES: { category: ContentCategory; patterns: RegExp[] }[] = [
@@ -43,7 +43,10 @@ function estimateReach(reactions: number, reposts: number): number {
 
 export function normalizeLinkedInPost(raw: RawLinkedInPost): SocialPost {
   const text = [raw.headline, raw.text].filter(Boolean).join(" — ");
-  const reach = estimateReach(raw.reactions, raw.reposts);
+  const deliveryType: PostType = raw.deliveryType ?? "organic";
+  const reachMultiplier =
+    deliveryType === "paid" ? 2.1 : deliveryType === "boosted" ? 1.45 : 1;
+  const reach = Math.round(estimateReach(raw.reactions, raw.reposts) * reachMultiplier);
   const impressions = Math.round(reach * 1.35);
 
   return {
@@ -51,7 +54,7 @@ export function normalizeLinkedInPost(raw: RawLinkedInPost): SocialPost {
     platform: "linkedin",
     category: inferCategory(text),
     storyBeat: inferStoryBeat(text),
-    type: "organic",
+    type: deliveryType,
     publishedAt: raw.publishedAt,
     caption: raw.text,
     imageUrl:
@@ -65,6 +68,7 @@ export function normalizeLinkedInPost(raw: RawLinkedInPost): SocialPost {
       shares: raw.reposts,
       saves: 0,
       clicks: clicksFromImpressions(impressions),
+      spend: raw.spend,
     },
   };
 }

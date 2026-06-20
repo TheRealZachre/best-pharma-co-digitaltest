@@ -21,6 +21,8 @@ export const METRIC_DEFINITIONS = {
     "Average click-through rate — the share of impressions that led to a click. Uses platform click data when available, otherwise a 1.2% industry estimate.",
   audienceGrowth:
     "Combined follower count across all connected social channels — LinkedIn, Instagram, Facebook, X, and YouTube. Totals are summed from live sync when available.",
+  totalSpend:
+    "Total media spend on paid and boosted posts in the selected period, summed across all corporate channels.",
 } as const;
 
 export type MetricDefinitionKey = keyof typeof METRIC_DEFINITIONS;

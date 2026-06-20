@@ -99,6 +99,8 @@ export default async function FounderWeeklyReportPage() {
           selectedChannels={FOUNDER_PLATFORMS}
         />
 
+        <ReportStats summary={summary} />
+
         <WeekComparisonPanel
           current={{
             weeks: currentWeeks,
@@ -118,8 +120,6 @@ export default async function FounderWeeklyReportPage() {
           arcTitle={`${brand.name} narrative arc — this week vs prior week`}
           subtitle="Rolling two-week view. Hover any node to see the post, story beat, and engagement score."
         />
-
-        <ReportStats summary={summary} />
 
         <ReportPostsGrid
           posts={posts}

@@ -10,6 +10,7 @@ import { WhatWorkedAnalysis } from "@/components/dashboard/WhatWorkedAnalysis";
 import { OrganicPaidBreakdown } from "@/components/dashboard/OrganicPaidBreakdown";
 import { AudienceGrowthChart } from "@/components/dashboard/AudienceGrowthChart";
 import { SpendPerformanceChart } from "@/components/dashboard/SpendPerformanceChart";
+import { PaidSocialAnalytics } from "@/components/analytics/PaidSocialAnalytics";
 import { MonthComparisonPanel } from "@/components/narrative/MonthComparisonPanel";
 import { NarrativeSection } from "@/components/narrative/NarrativeSection";
 import { SplitWeeklyPerformancePanel } from "@/components/narrative/SplitWeeklyPerformancePanel";
@@ -111,6 +112,13 @@ export default async function MonthlyReportPage() {
           selectedChannels={selectedChannels}
         />
 
+        <ReportStats summary={summary} />
+
+        <PaidSocialAnalytics
+          posts={posts}
+          subtitle={`Paid social performance for ${currentMonth.label} across all corporate channels.`}
+        />
+
         <MonthComparisonPanel current={currentMonth} prior={priorMonth} />
 
         <SplitWeeklyPerformancePanel
@@ -132,8 +140,6 @@ export default async function MonthlyReportPage() {
           arcTitle={`${brand.name} narrative arc — current & prior month`}
           subtitle="Every post mapped by date and engagement intensity. Each node is colored by story beat: Brand Vision, Scientific Innovation, Patient-Centered, Disease Awareness, Corporate Citizenship, People & Culture, and Policy Advocacy."
         />
-
-        <ReportStats summary={summary} />
 
         <div className="grid gap-6 lg:grid-cols-2">
           <OrganicPaidBreakdown summary={summary} />

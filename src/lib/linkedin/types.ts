@@ -11,6 +11,8 @@ export interface RawLinkedInPost {
   comments: number;
   reposts: number;
   imageUrl?: string;
+  deliveryType?: "organic" | "paid" | "boosted";
+  spend?: number;
 }
 
 export interface LinkedInSyncMeta {
