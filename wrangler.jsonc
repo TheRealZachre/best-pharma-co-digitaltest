@@ -21,8 +21,8 @@
   "kv_namespaces": [
     {
       "binding": "APP_DATA_KV",
-      "id": "REPLACE_WITH_PRODUCTION_KV_ID",
-      "preview_id": "REPLACE_WITH_PREVIEW_KV_ID"
+      "id": "ca370be77808438e827c1e4fe54778f5",
+      "preview_id": "f2f09a13a18d410f9578b7e6ba073d15"
     }
   ],
   "vars": {

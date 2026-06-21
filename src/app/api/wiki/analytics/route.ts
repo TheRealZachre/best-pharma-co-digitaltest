@@ -61,7 +61,7 @@ export async function GET(req: NextRequest) {
       pageviews,
       maintenance_flags: article.maintenanceFlags,
       _extract: article.extract,
-      aiReviewAvailable: isAnthropicConfigured(),
+      aiReviewAvailable: isAnthropicConfigured() || isDemoWikipediaQuery(q),
       demo: isDemoWikipediaQuery(q),
     });
   } catch (e: unknown) {

@@ -74,6 +74,14 @@ function followersFromMeta(
   return followers;
 }
 
+function dedupePostsById(posts: SocialPost[]): SocialPost[] {
+  const byId = new Map<string, SocialPost>();
+  for (const post of posts) {
+    byId.set(post.id, post);
+  }
+  return [...byId.values()];
+}
+
 export async function getLinkedInPosts(): Promise<{
   posts: SocialPost[];
   source: "cache" | "mock";
@@ -117,17 +125,17 @@ export async function getMultiChannelPosts(): Promise<{
     const livePlatforms = ANALYTICS_PLATFORMS.filter(
       (platform) => channelSources[platform] === "live"
     );
-    const platformsInCache = new Set(
+    const cachedPlatforms = new Set(
       socialCache.posts.map((post) => post.platform)
     );
 
     const seedPosts = generateChannelSeedPosts().filter(
       (post) =>
         !livePlatforms.includes(post.platform as SocialChannel) &&
-        !platformsInCache.has(post.platform)
+        !cachedPlatforms.has(post.platform)
     );
 
-    const posts = [...socialCache.posts, ...seedPosts].sort(
+    const posts = dedupePostsById([...socialCache.posts, ...seedPosts]).sort(
       (a, b) =>
         new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
     );
@@ -153,7 +161,7 @@ export async function getMultiChannelPosts(): Promise<{
 
   const { posts: linkedInPosts, source, meta } = await getLinkedInPosts();
   const seedPosts = generateChannelSeedPosts();
-  const posts = [...linkedInPosts, ...seedPosts].sort(
+  const posts = dedupePostsById([...linkedInPosts, ...seedPosts]).sort(
     (a, b) =>
       new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   );
@@ -173,7 +181,6 @@ export async function getMultiChannelPosts(): Promise<{
       facebook: "seed",
       x: "seed",
       youtube: "seed",
-      tiktok: "seed",
     },
     channelFollowers: linkedInFollowers,
     meta: meta
@@ -198,7 +205,7 @@ export async function getMultiChannelPosts(): Promise<{
 export async function getAllPosts(): Promise<SocialPost[]> {
   const { posts } = await getMultiChannelPosts();
   const selectedChannels = await getSelectedAnalyticsChannels();
-  return filterPostsByChannels(posts, selectedChannels);
+  return dedupePostsById(filterPostsByChannels(posts, selectedChannels));
 }
 
 export async function getPostsByPlatform(
@@ -265,8 +272,8 @@ export function buildReportSummary(posts: SocialPost[]): ReportSummary {
     organicPosts: organic.length,
     paidPosts: paid.length,
     totalSpend,
-    avgEngagementRate: Math.round(avgER * 10) / 10,
-    avgCTR: Math.round(avgCTR * 10) / 10,
+    avgEngagementRate: avgER,
+    avgCTR,
     totalReach: posts.reduce((s, p) => s + p.metrics.reach, 0),
     totalImpressions: posts.reduce((s, p) => s + p.metrics.impressions, 0),
     audienceGrowth: latest.followers - previous.followers,

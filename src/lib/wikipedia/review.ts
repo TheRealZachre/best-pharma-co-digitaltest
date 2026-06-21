@@ -4,6 +4,7 @@
 
 import Anthropic from "@anthropic-ai/sdk";
 import { getAnthropicApiKey } from "@/lib/env";
+import { getDemoEditorialReview, isDemoArticleReview } from "./seed";
 import type { MaintenanceFlag } from "./fetch";
 
 const MAX_CHARS = 12_000;
@@ -75,6 +76,9 @@ export async function analyseArticle(
 ) {
   const apiKey = getAnthropicApiKey();
   if (!apiKey) {
+    if (isDemoArticleReview(title)) {
+      return getDemoEditorialReview(title, flags);
+    }
     return {
       error:
         "AI editorial review is disabled. Add ANTHROPIC_API_KEY to .dev.vars, restart npm run dev, and reload this page.",

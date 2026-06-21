@@ -3,8 +3,8 @@ NEXTJS_ENV=development
 AUTH_SECRET=mhD/5P74g0MuOmGgjftVj26bn2dp5w8RziT69fZ0o94=
 AUTH_URL=http://localhost:3004
 
-# Use seed data for demos (no live API keys required)
-LINKEDIN_DATA_PROVIDER=seed
+# Optional — enables live Claude editorial review for non-demo Wikipedia articles
+# ANTHROPIC_API_KEY=sk-ant-api03-...
 
 # Best Pharma Co. social channels (defaults match src/lib/client.ts)
 LINKEDIN_COMPANY_SLUG=best-pharma-co

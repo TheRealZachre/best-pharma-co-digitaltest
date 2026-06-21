@@ -1,6 +1,6 @@
 {
   "meta": {
-    "syncedAt": "2026-06-20T18:21:48.029Z",
+    "syncedAt": "2026-06-20T00:47:03.631Z",
     "companySlug": "best-pharma-co",
     "channels": {
       "linkedin": {
@@ -8,42 +8,46 @@
         "followers": 2100000,
         "provider": "seed",
         "dataSource": "seed",
-        "syncedAt": "2026-06-20T18:21:48.029Z"
+        "syncedAt": "2026-06-20T00:47:03.630Z"
       },
       "instagram": {
         "postCount": 12,
         "followers": 245000,
         "provider": "seed",
         "dataSource": "seed",
-        "syncedAt": "2026-06-20T18:21:48.029Z"
+        "syncedAt": "2026-06-19T16:08:53.466Z",
+        "error": "APIFY_TOKEN is required for non-LinkedIn channels. Set it in .env.local."
       },
       "facebook": {
         "postCount": 10,
         "followers": 420000,
         "provider": "seed",
         "dataSource": "seed",
-        "syncedAt": "2026-06-20T18:21:48.029Z"
+        "syncedAt": "2026-06-19T16:08:53.466Z",
+        "error": "APIFY_TOKEN is required for non-LinkedIn channels. Set it in .env.local."
       },
       "x": {
         "postCount": 10,
         "followers": 385000,
         "provider": "seed",
         "dataSource": "seed",
-        "syncedAt": "2026-06-20T18:21:48.029Z"
+        "syncedAt": "2026-06-19T16:08:53.466Z",
+        "error": "APIFY_TOKEN is required for non-LinkedIn channels. Set it in .env.local."
       },
       "youtube": {
         "postCount": 10,
         "followers": 128000,
         "provider": "seed",
         "dataSource": "seed",
-        "syncedAt": "2026-06-20T18:21:48.029Z"
+        "syncedAt": "2026-06-19T16:08:53.466Z",
+        "error": "APIFY_TOKEN is required for non-LinkedIn channels. Set it in .env.local."
       },
       "tiktok": {
-        "postCount": 12,
-        "followers": 250000,
-        "provider": "seed",
-        "dataSource": "seed",
-        "syncedAt": "2026-06-20T18:21:48.029Z"
+        "postCount": 0,
+        "provider": "apify",
+        "dataSource": "error",
+        "error": "APIFY_TOKEN is required for non-LinkedIn channels. Set it in .env.local.",
+        "syncedAt": "2026-06-20T00:47:03.631Z"
       }
     }
   },
@@ -54,18 +58,18 @@
       "category": "behind-the-scenes",
       "storyBeat": "Scientific Innovation",
       "type": "paid",
-      "publishedAt": "2026-06-18T18:21:48.022Z",
+      "publishedAt": "2026-06-17T16:08:53.457Z",
       "caption": "ASCO season is here. 42 abstracts, four oral presentations — Best Pharma teams sharing data that moves practice forward. #TeamBestPharma #ASCO26",
       "imageUrl": "https://picsum.photos/seed/bpc-instagram-0/600/600",
       "metrics": {
-        "impressions": 25740,
-        "reach": 19800,
-        "likes": 495,
-        "comments": 39,
-        "shares": 29,
-        "saves": 99,
-        "clicks": 463,
-        "spend": 920
+        "impressions": 11700,
+        "reach": 9000,
+        "likes": 225,
+        "comments": 18,
+        "shares": 13,
+        "saves": 45,
+        "clicks": 140,
+        "spend": 150
       }
     },
     {
@@ -74,18 +78,18 @@
       "category": "educational",
       "storyBeat": "Scientific Innovation",
       "type": "paid",
-      "publishedAt": "2026-06-18T18:21:48.022Z",
+      "publishedAt": "2026-06-17T16:08:53.457Z",
       "caption": "Best Pharma Co. at ASCO 2026 — visit our booth for lung, breast, and hematology data. Intended for healthcare professionals.",
       "imageUrl": "https://picsum.photos/seed/bpc-facebook-0/600/600",
       "metrics": {
-        "impressions": 20020,
-        "reach": 15400,
-        "likes": 385,
-        "comments": 30,
-        "shares": 23,
+        "impressions": 9100,
+        "reach": 7000,
+        "likes": 175,
+        "comments": 14,
+        "shares": 10,
         "saves": 0,
-        "clicks": 360,
-        "spend": 780
+        "clicks": 109,
+        "spend": 150
       }
     },
     {
@@ -94,18 +98,18 @@
       "category": "educational",
       "storyBeat": "Scientific Innovation",
       "type": "paid",
-      "publishedAt": "2026-06-18T18:21:48.022Z",
+      "publishedAt": "2026-06-17T16:08:53.457Z",
       "caption": "At #ASCO26 we're sharing data that shifts the NSCLC conversation. BPC-401 durability matters. #TeamBestPharma",
       "imageUrl": "https://picsum.photos/seed/bpc-x-0/600/600",
       "metrics": {
-        "impressions": 11440,
-        "reach": 8800,
-        "likes": 220,
-        "comments": 17,
-        "shares": 33,
+        "impressions": 5200,
+        "reach": 4000,
+        "likes": 100,
+        "comments": 8,
+        "shares": 15,
         "saves": 0,
-        "clicks": 205,
-        "spend": 520
+        "clicks": 62,
+        "spend": 150
       }
     },
     {
@@ -114,38 +118,18 @@
       "category": "educational",
       "storyBeat": "Scientific Innovation",
       "type": "paid",
-      "publishedAt": "2026-06-18T18:21:48.022Z",
+      "publishedAt": "2026-06-17T16:08:53.457Z",
       "caption": "ASCO 2026 Highlights | Best Pharma oncology data — congress recap for clinicians.",
       "imageUrl": "https://picsum.photos/seed/bpc-youtube-0/600/600",
       "metrics": {
-        "impressions": 42900,
-        "reach": 33000,
-        "likes": 1320,
-        "comments": 105,
-        "shares": 79,
+        "impressions": 19500,
+        "reach": 15000,
+        "likes": 600,
+        "comments": 48,
+        "shares": 36,
         "saves": 0,
-        "clicks": 772,
-        "spend": 2400
-      }
-    },
-    {
-      "id": "tiktok-seed-1",
-      "platform": "tiktok",
-      "category": "behind-the-scenes",
-      "storyBeat": "Scientific Innovation",
-      "type": "paid",
-      "publishedAt": "2026-06-18T18:21:48.022Z",
-      "caption": "POV: ASCO booth setup at 6am ☕️ 42 abstracts, four oral presentations — Team Best Pharma is ready. #ASCO26 #PharmaTok",
-      "imageUrl": "https://picsum.photos/seed/bpc-tiktok-0/600/600",
-      "metrics": {
-        "impressions": 71280,
-        "reach": 39600,
-        "likes": 2178,
-        "comments": 130,
-        "shares": 261,
-        "saves": 609,
-        "clicks": 1283,
-        "spend": 680
+        "clicks": 234,
+        "spend": 150
       }
     },
     {
@@ -153,19 +137,18 @@
       "platform": "linkedin",
       "category": "behind-the-scenes",
       "storyBeat": "People & Culture",
-      "type": "paid",
-      "publishedAt": "2026-06-16T18:21:48.028Z",
+      "type": "organic",
+      "publishedAt": "2026-06-16T00:47:03.620Z",
       "caption": "Best Pharma Co. earned Great Place to Work certification across our U.S. and EU hubs — culture that attracts the scientists and communicators advancing global health.",
       "imageUrl": "https://picsum.photos/seed/bpc-li-12/600/600",
       "metrics": {
-        "impressions": 23157,
-        "reach": 17153,
+        "impressions": 11027,
+        "reach": 8168,
         "likes": 534,
         "comments": 19,
         "shares": 44,
         "saves": 0,
-        "clicks": 277,
-        "spend": 2100
+        "clicks": 132
       }
     },
     {
@@ -173,19 +156,18 @@
       "platform": "linkedin",
       "category": "educational",
       "storyBeat": "Scientific Innovation",
-      "type": "paid",
-      "publishedAt": "2026-06-13T18:21:48.028Z",
+      "type": "organic",
+      "publishedAt": "2026-06-13T00:47:03.620Z",
       "caption": "Step therapy can delay access to the therapy a clinician already selected. We're working with patient groups on policy solutions that put clinical judgment first.",
       "imageUrl": "https://picsum.photos/seed/bpc-li-11/600/600",
       "metrics": {
-        "impressions": 7008,
-        "reach": 5191,
+        "impressions": 3337,
+        "reach": 2472,
         "likes": 156,
         "comments": 8,
         "shares": 15,
         "saves": 0,
-        "clicks": 84,
-        "spend": 2900
+        "clicks": 40
       }
     },
     {
@@ -193,19 +175,18 @@
       "platform": "instagram",
       "category": "educational",
       "storyBeat": "Scientific Innovation",
-      "type": "boosted",
-      "publishedAt": "2026-06-13T18:21:48.022Z",
+      "type": "organic",
+      "publishedAt": "2026-06-12T16:08:53.457Z",
       "caption": "Maria's rheumatoid arthritis journey reminds us why access and support matter as much as science. #PatientsFirst #BestPharmaCo",
       "imageUrl": "https://picsum.photos/seed/bpc-instagram-1/600/600",
       "metrics": {
-        "impressions": 25665,
-        "reach": 17700,
-        "likes": 531,
-        "comments": 42,
-        "shares": 31,
-        "saves": 106,
-        "clicks": 307,
-        "spend": 460
+        "impressions": 17110,
+        "reach": 11800,
+        "likes": 354,
+        "comments": 28,
+        "shares": 21,
+        "saves": 70,
+        "clicks": 205
       }
     },
     {
@@ -213,19 +194,18 @@
       "platform": "facebook",
       "category": "educational",
       "storyBeat": "Scientific Innovation",
-      "type": "boosted",
-      "publishedAt": "2026-06-13T18:21:48.022Z",
+      "type": "organic",
+      "publishedAt": "2026-06-12T16:08:53.457Z",
       "caption": "Maria's story: diagnosis, treatment, and life with rheumatoid arthritis — clarity and compassion from day one.",
       "imageUrl": "https://picsum.photos/seed/bpc-facebook-1/600/600",
       "metrics": {
-        "impressions": 19793,
-        "reach": 13650,
-        "likes": 409,
-        "comments": 32,
-        "shares": 24,
+        "impressions": 13195,
+        "reach": 9100,
+        "likes": 273,
+        "comments": 21,
+        "shares": 16,
         "saves": 0,
-        "clicks": 237,
-        "spend": 401
+        "clicks": 158
       }
     },
     {
@@ -233,19 +213,18 @@
       "platform": "x",
       "category": "promotional",
       "storyBeat": "Scientific Innovation",
-      "type": "boosted",
-      "publishedAt": "2026-06-13T18:21:48.022Z",
+      "type": "organic",
+      "publishedAt": "2026-06-12T16:08:53.457Z",
       "caption": "Priority Review for BPC-401 — a regulatory milestone for patients with advanced lung cancer. Press release ↓",
       "imageUrl": "https://picsum.photos/seed/bpc-x-1/600/600",
       "metrics": {
-        "impressions": 11310,
-        "reach": 7800,
-        "likes": 234,
-        "comments": 18,
-        "shares": 35,
+        "impressions": 7540,
+        "reach": 5200,
+        "likes": 156,
+        "comments": 12,
+        "shares": 23,
         "saves": 0,
-        "clicks": 135,
-        "spend": 292
+        "clicks": 90
       }
     },
     {
@@ -253,39 +232,18 @@
       "platform": "youtube",
       "category": "educational",
       "storyBeat": "Scientific Innovation",
-      "type": "boosted",
-      "publishedAt": "2026-06-13T18:21:48.022Z",
+      "type": "organic",
+      "publishedAt": "2026-06-12T16:08:53.457Z",
       "caption": "Maria's Story — Rheumatoid Arthritis | A patient perspective on diagnosis, treatment, and daily life.",
       "imageUrl": "https://picsum.photos/seed/bpc-youtube-1/600/600",
       "metrics": {
-        "impressions": 41760,
-        "reach": 28800,
-        "likes": 1152,
-        "comments": 92,
-        "shares": 69,
+        "impressions": 27840,
+        "reach": 19200,
+        "likes": 768,
+        "comments": 61,
+        "shares": 46,
         "saves": 0,
-        "clicks": 501,
-        "spend": 1082
-      }
-    },
-    {
-      "id": "tiktok-seed-2",
-      "platform": "tiktok",
-      "category": "educational",
-      "storyBeat": "Scientific Innovation",
-      "type": "boosted",
-      "publishedAt": "2026-06-13T18:21:48.022Z",
-      "caption": "3 things Priority Review means for lung cancer patients (in 60 sec) 🫁 BPC-401 explainer #PatientsFirst",
-      "imageUrl": "https://picsum.photos/seed/bpc-tiktok-1/600/600",
-      "metrics": {
-        "impressions": 69600,
-        "reach": 34800,
-        "likes": 2192,
-        "comments": 131,
-        "shares": 263,
-        "saves": 613,
-        "clicks": 835,
-        "spend": 359
+        "clicks": 334
       }
     },
     {
@@ -294,7 +252,7 @@
       "category": "educational",
       "storyBeat": "Scientific Innovation",
       "type": "organic",
-      "publishedAt": "2026-06-10T18:21:48.028Z",
+      "publishedAt": "2026-06-10T00:47:03.620Z",
       "caption": "Dr. Okonkwo leads our translational oncology group. He shares how cross-functional teams move from bench to bedside — and what 'urgency with rigor' means at Best Pharma.",
       "imageUrl": "https://picsum.photos/seed/bpc-li-10/600/600",
       "metrics": {
@@ -313,7 +271,7 @@
       "category": "educational",
       "storyBeat": "Scientific Innovation",
       "type": "organic",
-      "publishedAt": "2026-06-08T18:21:48.022Z",
+      "publishedAt": "2026-06-07T16:08:53.457Z",
       "caption": "BPC-401 Phase 3: 24-month OS data reinforcing durable benefit in first-line NSCLC. Swipe for the topline. #Oncology",
       "imageUrl": "https://picsum.photos/seed/bpc-instagram-2/600/600",
       "metrics": {
@@ -331,19 +289,18 @@
       "platform": "facebook",
       "category": "promotional",
       "storyBeat": "Scientific Innovation",
-      "type": "paid",
-      "publishedAt": "2026-06-08T18:21:48.022Z",
+      "type": "organic",
+      "publishedAt": "2026-06-07T16:08:53.457Z",
       "caption": "FDA Priority Review granted for BPC-401 in first-line NSCLC. Read the announcement on our newsroom.",
       "imageUrl": "https://picsum.photos/seed/bpc-facebook-2/600/600",
       "metrics": {
-        "impressions": 39424,
-        "reach": 24640,
-        "likes": 862,
-        "comments": 68,
-        "shares": 51,
+        "impressions": 17920,
+        "reach": 11200,
+        "likes": 392,
+        "comments": 31,
+        "shares": 23,
         "saves": 0,
-        "clicks": 709,
-        "spend": 1130
+        "clicks": 215
       }
     },
     {
@@ -351,19 +308,18 @@
       "platform": "x",
       "category": "promotional",
       "storyBeat": "Scientific Innovation",
-      "type": "paid",
-      "publishedAt": "2026-06-08T18:21:48.022Z",
+      "type": "organic",
+      "publishedAt": "2026-06-07T16:08:53.457Z",
       "caption": "Q1 2026: $14.2B revenue, +8% YoY. Oncology and vaccines leading growth. #BestPharmaCo",
       "imageUrl": "https://picsum.photos/seed/bpc-x-2/600/600",
       "metrics": {
-        "impressions": 22528,
-        "reach": 14080,
-        "likes": 492,
-        "comments": 39,
-        "shares": 73,
+        "impressions": 10240,
+        "reach": 6400,
+        "likes": 224,
+        "comments": 17,
+        "shares": 33,
         "saves": 0,
-        "clicks": 405,
-        "spend": 870
+        "clicks": 122
       }
     },
     {
@@ -372,7 +328,7 @@
       "category": "educational",
       "storyBeat": "Scientific Innovation",
       "type": "organic",
-      "publishedAt": "2026-06-08T18:21:48.022Z",
+      "publishedAt": "2026-06-07T16:08:53.457Z",
       "caption": "BPC-401 Explained | Why 24-month OS data changes first-line NSCLC conversations.",
       "imageUrl": "https://picsum.photos/seed/bpc-youtube-2/600/600",
       "metrics": {
@@ -386,31 +342,12 @@
       }
     },
     {
-      "id": "tiktok-seed-3",
-      "platform": "tiktok",
-      "category": "behind-the-scenes",
-      "storyBeat": "Scientific Innovation",
-      "type": "organic",
-      "publishedAt": "2026-06-08T18:21:48.022Z",
-      "caption": "Day in the life: oncology medical liaison edition — congress floor, HCP conversations, zero downtime.",
-      "imageUrl": "https://picsum.photos/seed/bpc-tiktok-2/600/600",
-      "metrics": {
-        "impressions": 62480,
-        "reach": 28400,
-        "likes": 2016,
-        "comments": 120,
-        "shares": 241,
-        "saves": 564,
-        "clicks": 749
-      }
-    },
-    {
       "id": "bpc-li-9",
       "platform": "linkedin",
       "category": "educational",
       "storyBeat": "Scientific Innovation",
       "type": "organic",
-      "publishedAt": "2026-06-06T18:21:48.028Z",
+      "publishedAt": "2026-06-06T00:47:03.620Z",
       "caption": "Patients and caregivers shape our trials, labels, and access programs. Meet the 2026 Patient Advisory Council — lived experience at the center of every decision.",
       "imageUrl": "https://picsum.photos/seed/bpc-li-9/600/600",
       "metrics": {
@@ -428,19 +365,18 @@
       "platform": "linkedin",
       "category": "behind-the-scenes",
       "storyBeat": "Scientific Innovation",
-      "type": "boosted",
-      "publishedAt": "2026-06-03T18:21:48.028Z",
+      "type": "organic",
+      "publishedAt": "2026-06-03T00:47:03.620Z",
       "caption": "When Maria was diagnosed with rheumatoid arthritis, she needed clarity and a care team that listened. Her story reflects why we design support around real patient journeys.",
       "imageUrl": "https://picsum.photos/seed/bpc-li-8/600/600",
       "metrics": {
-        "impressions": 14525,
-        "reach": 10759,
+        "impressions": 10017,
+        "reach": 7420,
         "likes": 445,
         "comments": 31,
         "shares": 52,
         "saves": 0,
-        "clicks": 174,
-        "spend": 1240
+        "clicks": 120
       }
     },
     {
@@ -449,7 +385,7 @@
       "category": "behind-the-scenes",
       "storyBeat": "Scientific Innovation",
       "type": "organic",
-      "publishedAt": "2026-06-03T18:21:48.022Z",
+      "publishedAt": "2026-06-02T16:08:53.457Z",
       "caption": "Behind the scenes at our Hartford innovation campus — where vaccine and oncology R&D teams collaborate daily.",
       "imageUrl": "https://picsum.photos/seed/bpc-instagram-3/600/600",
       "metrics": {
@@ -468,7 +404,7 @@
       "category": "educational",
       "storyBeat": "Scientific Innovation",
       "type": "organic",
-      "publishedAt": "2026-06-03T18:21:48.022Z",
+      "publishedAt": "2026-06-02T16:08:53.457Z",
       "caption": "Long-term vaccine efficacy data presented at a major medical congress — reinforcing public health impact.",
       "imageUrl": "https://picsum.photos/seed/bpc-facebook-3/600/600",
       "metrics": {
@@ -487,7 +423,7 @@
       "category": "educational",
       "storyBeat": "Scientific Innovation",
       "type": "organic",
-      "publishedAt": "2026-06-03T18:21:48.022Z",
+      "publishedAt": "2026-06-02T16:08:53.457Z",
       "caption": "Patients First isn't a tagline — it's how we design trials, access programs, and support. Maria's story is why.",
       "imageUrl": "https://picsum.photos/seed/bpc-x-3/600/600",
       "metrics": {
@@ -506,7 +442,7 @@
       "category": "promotional",
       "storyBeat": "Scientific Innovation",
       "type": "organic",
-      "publishedAt": "2026-06-03T18:21:48.022Z",
+      "publishedAt": "2026-06-02T16:08:53.457Z",
       "caption": "Best Care Access Program | How we help eligible patients start therapy without delay.",
       "imageUrl": "https://picsum.photos/seed/bpc-youtube-3/600/600",
       "metrics": {
@@ -520,31 +456,12 @@
       }
     },
     {
-      "id": "tiktok-seed-4",
-      "platform": "tiktok",
-      "category": "educational",
-      "storyBeat": "Scientific Innovation",
-      "type": "organic",
-      "publishedAt": "2026-06-03T18:21:48.022Z",
-      "caption": "Maria's RA journey hit different 💙 Real patients. Real access programs. #BestPharmaCo #ChronicCare",
-      "imageUrl": "https://picsum.photos/seed/bpc-tiktok-3/600/600",
-      "metrics": {
-        "impressions": 60480,
-        "reach": 33600,
-        "likes": 2654,
-        "comments": 159,
-        "shares": 318,
-        "saves": 743,
-        "clicks": 725
-      }
-    },
-    {
       "id": "bpc-li-7",
       "platform": "linkedin",
       "category": "educational",
       "storyBeat": "Scientific Innovation",
       "type": "organic",
-      "publishedAt": "2026-05-30T18:21:48.028Z",
+      "publishedAt": "2026-05-30T00:47:03.620Z",
       "caption": "Poll: What percentage of rare diseases have an FDA-approved treatment? (Answer: fewer than 10% — underscoring why we invest in orphan drug R&D.)",
       "imageUrl": "https://picsum.photos/seed/bpc-li-7/600/600",
       "metrics": {
@@ -563,7 +480,7 @@
       "category": "educational",
       "storyBeat": "Scientific Innovation",
       "type": "organic",
-      "publishedAt": "2026-05-29T18:21:48.022Z",
+      "publishedAt": "2026-05-28T16:08:53.457Z",
       "caption": "Rare disease R&D: fewer than 10% of rare conditions have an approved therapy. We're committed to closing that gap.",
       "imageUrl": "https://picsum.photos/seed/bpc-instagram-4/600/600",
       "metrics": {
@@ -582,7 +499,7 @@
       "category": "behind-the-scenes",
       "storyBeat": "Scientific Innovation",
       "type": "organic",
-      "publishedAt": "2026-05-29T18:21:48.022Z",
+      "publishedAt": "2026-05-28T16:08:53.457Z",
       "caption": "Live from our R&D leadership forum — advancing translational science across oncology and immunology.",
       "imageUrl": "https://picsum.photos/seed/bpc-facebook-4/600/600",
       "metrics": {
@@ -600,19 +517,18 @@
       "platform": "x",
       "category": "promotional",
       "storyBeat": "Scientific Innovation",
-      "type": "paid",
-      "publishedAt": "2026-05-29T18:21:48.022Z",
+      "type": "organic",
+      "publishedAt": "2026-05-28T16:08:53.457Z",
       "caption": "42 ASCO abstracts accepted. Hematology depth + solid tumor acceleration. #Oncology",
       "imageUrl": "https://picsum.photos/seed/bpc-x-4/600/600",
       "metrics": {
-        "impressions": 28072,
-        "reach": 19360,
-        "likes": 484,
-        "comments": 38,
-        "shares": 72,
+        "impressions": 12760,
+        "reach": 8800,
+        "likes": 220,
+        "comments": 17,
+        "shares": 33,
         "saves": 0,
-        "clicks": 505,
-        "spend": 1220
+        "clicks": 153
       }
     },
     {
@@ -621,7 +537,7 @@
       "category": "educational",
       "storyBeat": "Scientific Innovation",
       "type": "organic",
-      "publishedAt": "2026-05-29T18:21:48.022Z",
+      "publishedAt": "2026-05-28T16:08:53.457Z",
       "caption": "Pipeline Deep Dive | Dr. James Okonkwo on oncology and vaccine R&D priorities.",
       "imageUrl": "https://picsum.photos/seed/bpc-youtube-4/600/600",
       "metrics": {
@@ -635,32 +551,12 @@
       }
     },
     {
-      "id": "tiktok-seed-5",
-      "platform": "tiktok",
-      "category": "promotional",
-      "storyBeat": "Scientific Innovation",
-      "type": "paid",
-      "publishedAt": "2026-05-29T18:21:48.022Z",
-      "caption": "When the Phase 3 topline drops and the whole R&D Slack goes 🔥 BPC-401 24-month OS data recap",
-      "imageUrl": "https://picsum.photos/seed/bpc-tiktok-4/600/600",
-      "metrics": {
-        "impressions": 170720,
-        "reach": 85360,
-        "likes": 4694,
-        "comments": 281,
-        "shares": 563,
-        "saves": 1314,
-        "clicks": 3072,
-        "spend": 1380
-      }
-    },
-    {
       "id": "bpc-li-6",
       "platform": "linkedin",
       "category": "educational",
       "storyBeat": "Scientific Innovation",
       "type": "organic",
-      "publishedAt": "2026-05-27T18:21:48.028Z",
+      "publishedAt": "2026-05-27T00:47:03.620Z",
       "caption": "Patients first, planet forward: our 2025 report covers carbon reduction targets, clinical trial diversity metrics, and community health partnerships.",
       "imageUrl": "https://picsum.photos/seed/bpc-li-6/600/600",
       "metrics": {
@@ -678,19 +574,18 @@
       "platform": "instagram",
       "category": "educational",
       "storyBeat": "Scientific Innovation",
-      "type": "boosted",
-      "publishedAt": "2026-05-24T18:21:48.022Z",
+      "type": "organic",
+      "publishedAt": "2026-05-23T16:08:53.457Z",
       "caption": "Our 2025 ESG report is live — carbon targets, trial diversity, and community partnerships across 40 countries.",
       "imageUrl": "https://picsum.photos/seed/bpc-instagram-5/600/600",
       "metrics": {
-        "impressions": 55200,
-        "reach": 34500,
-        "likes": 1035,
-        "comments": 82,
-        "shares": 62,
-        "saves": 207,
-        "clicks": 662,
-        "spend": 754
+        "impressions": 36800,
+        "reach": 23000,
+        "likes": 690,
+        "comments": 55,
+        "shares": 41,
+        "saves": 138,
+        "clicks": 441
       }
     },
     {
@@ -698,19 +593,18 @@
       "platform": "facebook",
       "category": "ugc",
       "storyBeat": "Scientific Innovation",
-      "type": "boosted",
-      "publishedAt": "2026-05-24T18:21:48.022Z",
+      "type": "organic",
+      "publishedAt": "2026-05-23T16:08:53.457Z",
       "caption": "World Health Day: colleagues share what #PatientsFirst means in their daily work.",
       "imageUrl": "https://picsum.photos/seed/bpc-facebook-5/600/600",
       "metrics": {
-        "impressions": 42000,
-        "reach": 26250,
-        "likes": 787,
-        "comments": 62,
-        "shares": 47,
+        "impressions": 28000,
+        "reach": 17500,
+        "likes": 525,
+        "comments": 42,
+        "shares": 31,
         "saves": 0,
-        "clicks": 504,
-        "spend": 695
+        "clicks": 336
       }
     },
     {
@@ -718,19 +612,18 @@
       "platform": "x",
       "category": "educational",
       "storyBeat": "Scientific Innovation",
-      "type": "boosted",
-      "publishedAt": "2026-05-24T18:21:48.022Z",
+      "type": "organic",
+      "publishedAt": "2026-05-23T16:08:53.457Z",
       "caption": "Best Care Access expanded to 14 markets. Eligible patients shouldn't wait on coverage paperwork.",
       "imageUrl": "https://picsum.photos/seed/bpc-x-5/600/600",
       "metrics": {
-        "impressions": 24000,
-        "reach": 15000,
-        "likes": 450,
-        "comments": 36,
-        "shares": 67,
+        "impressions": 16000,
+        "reach": 10000,
+        "likes": 300,
+        "comments": 24,
+        "shares": 45,
         "saves": 0,
-        "clicks": 288,
-        "spend": 586
+        "clicks": 192
       }
     },
     {
@@ -738,39 +631,18 @@
       "platform": "youtube",
       "category": "educational",
       "storyBeat": "Scientific Innovation",
-      "type": "boosted",
-      "publishedAt": "2026-05-24T18:21:48.022Z",
+      "type": "organic",
+      "publishedAt": "2026-05-23T16:08:53.457Z",
       "caption": "Q1 2026 Financial Results | CEO Elena Marshall on growth, pipeline, and patients first.",
       "imageUrl": "https://picsum.photos/seed/bpc-youtube-5/600/600",
       "metrics": {
-        "impressions": 86400,
-        "reach": 54000,
-        "likes": 2160,
-        "comments": 172,
-        "shares": 129,
+        "impressions": 57600,
+        "reach": 36000,
+        "likes": 1440,
+        "comments": 115,
+        "shares": 86,
         "saves": 0,
-        "clicks": 1036,
-        "spend": 1376
-      }
-    },
-    {
-      "id": "tiktok-seed-6",
-      "platform": "tiktok",
-      "category": "educational",
-      "storyBeat": "Scientific Innovation",
-      "type": "boosted",
-      "publishedAt": "2026-05-24T18:21:48.022Z",
-      "caption": "Rare disease facts that stopped our scroll — fewer than 10% of rare conditions have an approved therapy.",
-      "imageUrl": "https://picsum.photos/seed/bpc-tiktok-5/600/600",
-      "metrics": {
-        "impressions": 145200,
-        "reach": 66000,
-        "likes": 4158,
-        "comments": 249,
-        "shares": 498,
-        "saves": 1164,
-        "clicks": 1742,
-        "spend": 653
+        "clicks": 691
       }
     },
     {
@@ -779,7 +651,7 @@
       "category": "behind-the-scenes",
       "storyBeat": "Scientific Innovation",
       "type": "organic",
-      "publishedAt": "2026-05-23T18:21:48.028Z",
+      "publishedAt": "2026-05-23T00:47:03.620Z",
       "caption": "Vaccines protect communities. This week we highlight our R&D teams advancing next-generation pneumococcal and RSV candidates — science built for public health.",
       "imageUrl": "https://picsum.photos/seed/bpc-li-5/600/600",
       "metrics": {
@@ -797,19 +669,18 @@
       "platform": "linkedin",
       "category": "promotional",
       "storyBeat": "Scientific Innovation",
-      "type": "boosted",
-      "publishedAt": "2026-05-20T18:21:48.028Z",
+      "type": "organic",
+      "publishedAt": "2026-05-20T00:47:03.620Z",
       "caption": "We're expanding the Best Care Access program to 14 new markets, helping eligible patients start therapy without delay while coverage is confirmed.",
       "imageUrl": "https://picsum.photos/seed/bpc-li-4/600/600",
       "metrics": {
-        "impressions": 9740,
-        "reach": 7215,
+        "impressions": 6718,
+        "reach": 4976,
         "likes": 278,
         "comments": 9,
         "shares": 41,
         "saves": 0,
-        "clicks": 116,
-        "spend": 1650
+        "clicks": 80
       }
     },
     {
@@ -817,8 +688,8 @@
       "platform": "instagram",
       "category": "educational",
       "storyBeat": "Scientific Innovation",
-      "type": "organic",
-      "publishedAt": "2026-05-19T18:21:48.022Z",
+      "type": "paid",
+      "publishedAt": "2026-05-18T16:08:53.457Z",
       "caption": "#WorldImmunizationWeek — proud of colleagues advancing next-gen pneumococcal and RSV candidates.",
       "imageUrl": "https://picsum.photos/seed/bpc-instagram-6/600/600",
       "metrics": {
@@ -828,7 +699,8 @@
         "comments": 72,
         "shares": 54,
         "saves": 180,
-        "clicks": 402
+        "clicks": 402,
+        "spend": 420
       }
     },
     {
@@ -837,18 +709,18 @@
       "category": "promotional",
       "storyBeat": "Scientific Innovation",
       "type": "paid",
-      "publishedAt": "2026-05-19T18:21:48.022Z",
+      "publishedAt": "2026-05-18T16:08:53.457Z",
       "caption": "Best Pharma Q1 2026 financial results — strong execution across core therapeutic areas.",
       "imageUrl": "https://picsum.photos/seed/bpc-facebook-6/600/600",
       "metrics": {
-        "impressions": 56056,
-        "reach": 43120,
-        "likes": 1509,
-        "comments": 120,
-        "shares": 90,
+        "impressions": 25480,
+        "reach": 19600,
+        "likes": 686,
+        "comments": 54,
+        "shares": 41,
         "saves": 0,
-        "clicks": 1009,
-        "spend": 1830
+        "clicks": 305,
+        "spend": 420
       }
     },
     {
@@ -856,8 +728,8 @@
       "platform": "x",
       "category": "educational",
       "storyBeat": "Scientific Innovation",
-      "type": "organic",
-      "publishedAt": "2026-05-19T18:21:48.022Z",
+      "type": "paid",
+      "publishedAt": "2026-05-18T16:08:53.457Z",
       "caption": "2025 ESG report: carbon reduction, clinical diversity metrics, and community health — transparent progress.",
       "imageUrl": "https://picsum.photos/seed/bpc-x-6/600/600",
       "metrics": {
@@ -867,7 +739,8 @@
         "comments": 31,
         "shares": 58,
         "saves": 0,
-        "clicks": 174
+        "clicks": 174,
+        "spend": 420
       }
     },
     {
@@ -875,8 +748,8 @@
       "platform": "youtube",
       "category": "educational",
       "storyBeat": "Corporate Citizenship",
-      "type": "organic",
-      "publishedAt": "2026-05-19T18:21:48.022Z",
+      "type": "paid",
+      "publishedAt": "2026-05-18T16:08:53.457Z",
       "caption": "2025 ESG & Sustainability Report | Carbon, diversity, and community impact.",
       "imageUrl": "https://picsum.photos/seed/bpc-youtube-6/600/600",
       "metrics": {
@@ -886,26 +759,8 @@
         "comments": 128,
         "shares": 96,
         "saves": 0,
-        "clicks": 627
-      }
-    },
-    {
-      "id": "tiktok-seed-7",
-      "platform": "tiktok",
-      "category": "behind-the-scenes",
-      "storyBeat": "Scientific Innovation",
-      "type": "organic",
-      "publishedAt": "2026-05-19T18:21:48.022Z",
-      "caption": "Hartford innovation campus tour 🧪 Where vaccine + oncology teams actually collaborate IRL",
-      "imageUrl": "https://picsum.photos/seed/bpc-tiktok-6/600/600",
-      "metrics": {
-        "impressions": 88560,
-        "reach": 49200,
-        "likes": 3493,
-        "comments": 209,
-        "shares": 419,
-        "saves": 978,
-        "clicks": 1062
+        "clicks": 627,
+        "spend": 420
       }
     },
     {
@@ -914,7 +769,7 @@
       "category": "behind-the-scenes",
       "storyBeat": "People & Culture",
       "type": "organic",
-      "publishedAt": "2026-05-14T18:21:48.022Z",
+      "publishedAt": "2026-05-13T16:08:53.457Z",
       "caption": "Great Place to Work certified — the people behind Best Pharma Co. carry our mission every day.",
       "imageUrl": "https://picsum.photos/seed/bpc-instagram-7/600/600",
       "metrics": {
@@ -933,7 +788,7 @@
       "category": "educational",
       "storyBeat": "Scientific Innovation",
       "type": "organic",
-      "publishedAt": "2026-05-14T18:21:48.022Z",
+      "publishedAt": "2026-05-13T16:08:53.457Z",
       "caption": "Rare disease awareness: early diagnosis saves time to treatment. Test your knowledge in our short quiz.",
       "imageUrl": "https://picsum.photos/seed/bpc-facebook-7/600/600",
       "metrics": {
@@ -952,7 +807,7 @@
       "category": "educational",
       "storyBeat": "Scientific Innovation",
       "type": "organic",
-      "publishedAt": "2026-05-14T18:21:48.022Z",
+      "publishedAt": "2026-05-13T16:08:53.457Z",
       "caption": "AI in drug discovery: we're investing in tools that accelerate targets, not headlines. Thread 🧵",
       "imageUrl": "https://picsum.photos/seed/bpc-x-7/600/600",
       "metrics": {
@@ -971,7 +826,7 @@
       "category": "educational",
       "storyBeat": "Scientific Innovation",
       "type": "organic",
-      "publishedAt": "2026-05-14T18:21:48.022Z",
+      "publishedAt": "2026-05-13T16:08:53.457Z",
       "caption": "Behind the Science: mRNA platform | How our vaccine research teams approach next-gen candidates.",
       "imageUrl": "https://picsum.photos/seed/bpc-youtube-7/600/600",
       "metrics": {
@@ -985,31 +840,12 @@
       }
     },
     {
-      "id": "tiktok-seed-8",
-      "platform": "tiktok",
-      "category": "promotional",
-      "storyBeat": "Scientific Innovation",
-      "type": "organic",
-      "publishedAt": "2026-05-14T18:21:48.022Z",
-      "caption": "Q1 earnings in 45 seconds: $14.2B revenue, oncology momentum, pipeline wins 📈 #TeamBestPharma",
-      "imageUrl": "https://picsum.photos/seed/bpc-tiktok-7/600/600",
-      "metrics": {
-        "impressions": 108800,
-        "reach": 54400,
-        "likes": 4297,
-        "comments": 257,
-        "shares": 515,
-        "saves": 1203,
-        "clicks": 1305
-      }
-    },
-    {
       "id": "bpc-li-3",
       "platform": "linkedin",
       "category": "behind-the-scenes",
       "storyBeat": "Scientific Innovation",
       "type": "organic",
-      "publishedAt": "2026-05-13T18:21:48.028Z",
+      "publishedAt": "2026-05-13T00:47:03.620Z",
       "caption": "Team Best Pharma is heading to ASCO with 42 accepted abstracts across lung, breast, and hematologic malignancies — including four oral presentations.",
       "imageUrl": "https://picsum.photos/seed/bpc-li-3/600/600",
       "metrics": {
@@ -1027,19 +863,18 @@
       "platform": "instagram",
       "category": "promotional",
       "storyBeat": "Scientific Innovation",
-      "type": "paid",
-      "publishedAt": "2026-05-09T18:21:48.022Z",
+      "type": "organic",
+      "publishedAt": "2026-05-08T16:08:53.457Z",
       "caption": "Q1 2026 results: $14.2B revenue, oncology momentum, and pipeline progress. Link in bio.",
       "imageUrl": "https://picsum.photos/seed/bpc-instagram-8/600/600",
       "metrics": {
-        "impressions": 110528,
-        "reach": 69080,
-        "likes": 1727,
-        "comments": 138,
-        "shares": 103,
-        "saves": 345,
-        "clicks": 1989,
-        "spend": 2320
+        "impressions": 50240,
+        "reach": 31400,
+        "likes": 785,
+        "comments": 62,
+        "shares": 47,
+        "saves": 157,
+        "clicks": 602
       }
     },
     {
@@ -1048,7 +883,7 @@
       "category": "behind-the-scenes",
       "storyBeat": "People & Culture",
       "type": "organic",
-      "publishedAt": "2026-05-09T18:21:48.022Z",
+      "publishedAt": "2026-05-08T16:08:53.457Z",
       "caption": "Great Place to Work certification — culture that powers innovation at scale.",
       "imageUrl": "https://picsum.photos/seed/bpc-facebook-8/600/600",
       "metrics": {
@@ -1067,7 +902,7 @@
       "category": "behind-the-scenes",
       "storyBeat": "Scientific Innovation",
       "type": "organic",
-      "publishedAt": "2026-05-09T18:21:48.022Z",
+      "publishedAt": "2026-05-08T16:08:53.457Z",
       "caption": "EHA 2026 — connect with our hematology team. Booth details for HCPs in our events hub.",
       "imageUrl": "https://picsum.photos/seed/bpc-x-8/600/600",
       "metrics": {
@@ -1086,7 +921,7 @@
       "category": "behind-the-scenes",
       "storyBeat": "Scientific Innovation",
       "type": "organic",
-      "publishedAt": "2026-05-09T18:21:48.022Z",
+      "publishedAt": "2026-05-08T16:08:53.457Z",
       "caption": "EHA 2026 Booth Tour | Hematology community and new data from Team Best Pharma.",
       "imageUrl": "https://picsum.photos/seed/bpc-youtube-8/600/600",
       "metrics": {
@@ -1100,42 +935,22 @@
       }
     },
     {
-      "id": "tiktok-seed-9",
-      "platform": "tiktok",
-      "category": "educational",
-      "storyBeat": "Scientific Innovation",
-      "type": "organic",
-      "publishedAt": "2026-05-09T18:21:48.022Z",
-      "caption": "Best Care Access explained like you're texting a friend — 14 new markets, same mission.",
-      "imageUrl": "https://picsum.photos/seed/bpc-tiktok-8/600/600",
-      "metrics": {
-        "impressions": 131120,
-        "reach": 59600,
-        "likes": 3278,
-        "comments": 196,
-        "shares": 393,
-        "saves": 917,
-        "clicks": 1573
-      }
-    },
-    {
       "id": "bpc-li-2",
       "platform": "linkedin",
       "category": "educational",
       "storyBeat": "Scientific Innovation",
-      "type": "paid",
-      "publishedAt": "2026-05-06T18:21:48.028Z",
+      "type": "organic",
+      "publishedAt": "2026-05-06T00:47:03.620Z",
       "caption": "Our investigational PD-L1 inhibitor BPC-401 has received FDA Priority Review for first-line treatment of advanced non-small cell lung cancer. PDUFA date: September 2026.",
       "imageUrl": "https://picsum.photos/seed/bpc-li-2/600/600",
       "metrics": {
-        "impressions": 46414,
-        "reach": 34381,
+        "impressions": 22102,
+        "reach": 16372,
         "likes": 891,
         "comments": 34,
         "shares": 142,
         "saves": 0,
-        "clicks": 556,
-        "spend": 5200
+        "clicks": 265
       }
     },
     {
@@ -1143,19 +958,18 @@
       "platform": "instagram",
       "category": "educational",
       "storyBeat": "Scientific Innovation",
-      "type": "boosted",
-      "publishedAt": "2026-05-04T18:21:48.022Z",
+      "type": "organic",
+      "publishedAt": "2026-05-03T16:08:53.457Z",
       "caption": "Reel: What Priority Review means for patients waiting on BPC-401 — our regulatory lead breaks it down.",
       "imageUrl": "https://picsum.photos/seed/bpc-instagram-9/600/600",
       "metrics": {
-        "impressions": 66690,
-        "reach": 51300,
-        "likes": 1539,
-        "comments": 123,
-        "shares": 92,
-        "saves": 307,
-        "clicks": 800,
-        "spend": 1048
+        "impressions": 44460,
+        "reach": 34200,
+        "likes": 1026,
+        "comments": 82,
+        "shares": 61,
+        "saves": 205,
+        "clicks": 533
       }
     },
     {
@@ -1163,19 +977,18 @@
       "platform": "facebook",
       "category": "educational",
       "storyBeat": "Scientific Innovation",
-      "type": "boosted",
-      "publishedAt": "2026-05-04T18:21:48.022Z",
+      "type": "organic",
+      "publishedAt": "2026-05-03T16:08:53.457Z",
       "caption": "Video: Dr. James Okonkwo on moving from bench to bedside — urgency with rigor.",
       "imageUrl": "https://picsum.photos/seed/bpc-facebook-9/600/600",
       "metrics": {
-        "impressions": 50505,
-        "reach": 38850,
-        "likes": 1165,
-        "comments": 93,
-        "shares": 69,
+        "impressions": 33670,
+        "reach": 25900,
+        "likes": 777,
+        "comments": 62,
+        "shares": 46,
         "saves": 0,
-        "clicks": 606,
-        "spend": 989
+        "clicks": 404
       }
     },
     {
@@ -1183,19 +996,18 @@
       "platform": "x",
       "category": "educational",
       "storyBeat": "Scientific Innovation",
-      "type": "boosted",
-      "publishedAt": "2026-05-04T18:21:48.022Z",
+      "type": "organic",
+      "publishedAt": "2026-05-03T16:08:53.457Z",
       "caption": "Orphan drug designation for BPC-227 in a rare metabolic disorder — hope for underserved patients.",
       "imageUrl": "https://picsum.photos/seed/bpc-x-9/600/600",
       "metrics": {
-        "impressions": 28860,
-        "reach": 22200,
-        "likes": 666,
-        "comments": 53,
-        "shares": 99,
+        "impressions": 19240,
+        "reach": 14800,
+        "likes": 444,
+        "comments": 35,
+        "shares": 66,
         "saves": 0,
-        "clicks": 346,
-        "spend": 880
+        "clicks": 230
       }
     },
     {
@@ -1203,39 +1015,18 @@
       "platform": "youtube",
       "category": "educational",
       "storyBeat": "Scientific Innovation",
-      "type": "boosted",
-      "publishedAt": "2026-05-04T18:21:48.022Z",
+      "type": "organic",
+      "publishedAt": "2026-05-03T16:08:53.457Z",
       "caption": "Rare Disease Awareness | Why orphan drug investment matters — with Best Pharma medical leaders.",
       "imageUrl": "https://picsum.photos/seed/bpc-youtube-9/600/600",
       "metrics": {
-        "impressions": 102960,
-        "reach": 79200,
-        "likes": 3168,
-        "comments": 253,
-        "shares": 190,
+        "impressions": 68640,
+        "reach": 52800,
+        "likes": 2112,
+        "comments": 168,
+        "shares": 126,
         "saves": 0,
-        "clicks": 1235,
-        "spend": 1670
-      }
-    },
-    {
-      "id": "tiktok-seed-10",
-      "platform": "tiktok",
-      "category": "ugc",
-      "storyBeat": "Scientific Innovation",
-      "type": "boosted",
-      "publishedAt": "2026-05-04T18:21:48.022Z",
-      "caption": "World Immunization Week vibes 💉 Colleagues share why public health work matters to them",
-      "imageUrl": "https://picsum.photos/seed/bpc-tiktok-9/600/600",
-      "metrics": {
-        "impressions": 174960,
-        "reach": 97200,
-        "likes": 6123,
-        "comments": 367,
-        "shares": 734,
-        "saves": 1714,
-        "clicks": 2099,
-        "spend": 947
+        "clicks": 823
       }
     },
     {
@@ -1243,19 +1034,18 @@
       "platform": "linkedin",
       "category": "educational",
       "storyBeat": "Scientific Innovation",
-      "type": "paid",
-      "publishedAt": "2026-04-29T18:21:48.028Z",
+      "type": "organic",
+      "publishedAt": "2026-04-29T00:47:03.620Z",
       "caption": "Best Pharma Co. reports Q1 2026 revenue of $14.2B, up 8% year over year, driven by oncology and vaccine franchises. Full investor release on our newsroom.",
       "imageUrl": "https://picsum.photos/seed/bpc-li-1/600/600",
       "metrics": {
-        "impressions": 21614,
-        "reach": 16010,
+        "impressions": 10292,
+        "reach": 7624,
         "likes": 412,
         "comments": 18,
         "shares": 67,
         "saves": 0,
-        "clicks": 259,
-        "spend": 3800
+        "clicks": 123
       }
     },
     {
@@ -1263,39 +1053,18 @@
       "platform": "instagram",
       "category": "promotional",
       "storyBeat": "Scientific Innovation",
-      "type": "paid",
-      "publishedAt": "2026-04-29T18:21:48.022Z",
+      "type": "organic",
+      "publishedAt": "2026-04-28T16:08:53.457Z",
       "caption": "Congress season recap — hematology depth and solid tumor acceleration across ASCO and EHA.",
       "imageUrl": "https://picsum.photos/seed/bpc-instagram-10/600/600",
       "metrics": {
-        "impressions": 118030,
-        "reach": 81400,
-        "likes": 2849,
-        "comments": 227,
-        "shares": 170,
-        "saves": 569,
-        "clicks": 2124,
-        "spend": 2670
-      }
-    },
-    {
-      "id": "tiktok-seed-11",
-      "platform": "tiktok",
-      "category": "educational",
-      "storyBeat": "Scientific Innovation",
-      "type": "paid",
-      "publishedAt": "2026-04-29T18:21:48.022Z",
-      "caption": "CEO Elena Marshall on Patients First — leadership clip from our Q1 town hall #Leadership",
-      "imageUrl": "https://picsum.photos/seed/bpc-tiktok-10/600/600",
-      "metrics": {
-        "impressions": 308000,
-        "reach": 154000,
-        "likes": 10934,
-        "comments": 656,
-        "shares": 1312,
-        "saves": 3061,
-        "clicks": 5544,
-        "spend": 2430
+        "impressions": 53650,
+        "reach": 37000,
+        "likes": 1295,
+        "comments": 103,
+        "shares": 77,
+        "saves": 259,
+        "clicks": 643
       }
     },
     {
@@ -1304,7 +1073,7 @@
       "category": "educational",
       "storyBeat": "Scientific Innovation",
       "type": "organic",
-      "publishedAt": "2026-04-24T18:21:48.022Z",
+      "publishedAt": "2026-04-23T16:08:53.457Z",
       "caption": "Best Care Access program now in 14 new markets. Geography shouldn't determine who gets treatment.",
       "imageUrl": "https://picsum.photos/seed/bpc-instagram-11/600/600",
       "metrics": {
@@ -1315,25 +1084,6 @@
         "shares": 95,
         "saves": 318,
         "clicks": 764
-      }
-    },
-    {
-      "id": "tiktok-seed-12",
-      "platform": "tiktok",
-      "category": "educational",
-      "storyBeat": "Scientific Innovation",
-      "type": "organic",
-      "publishedAt": "2026-04-24T18:21:48.022Z",
-      "caption": "ESG report drop 🌍 Carbon targets, trial diversity, community partnerships — link in bio",
-      "imageUrl": "https://picsum.photos/seed/bpc-tiktok-11/600/600",
-      "metrics": {
-        "impressions": 165440,
-        "reach": 75200,
-        "likes": 5940,
-        "comments": 356,
-        "shares": 712,
-        "saves": 1663,
-        "clicks": 1985
       }
     }
   ]

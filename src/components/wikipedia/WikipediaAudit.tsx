@@ -463,7 +463,7 @@ export function WikipediaAudit({ articleUrl }: { articleUrl: string }) {
                     </a>
                   </li>
                   <li>
-                    Add to <code className="rounded bg-amber-100 px-1">~/Projects/best-pharma-co-digitaltest/.dev.vars</code>:
+                    Add to <code className="rounded bg-amber-100 px-1">.dev.vars</code> in the project root:
                     <pre className="mt-2 overflow-x-auto rounded bg-amber-100 px-3 py-2 text-xs">
                       ANTHROPIC_API_KEY=sk-ant-api03-...
                     </pre>

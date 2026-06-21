@@ -136,3 +136,74 @@ export function getDemoArticle(raw: string): DemoArticle | null {
 export function getDemoPageviews(): { date: string; views: number }[] {
   return generatePageviews(90);
 }
+
+function isDemoArticleTitle(title: string): boolean {
+  const normalized = title.toLowerCase();
+  return (
+    normalized.includes("best pharma") ||
+    normalized.includes("elena marshall")
+  );
+}
+
+export function getDemoEditorialReview(
+  title: string,
+  flags: {
+    label: string;
+    severity: "high" | "medium" | "low";
+    description: string;
+    action: string;
+  }[]
+) {
+  const isCeo = title.toLowerCase().includes("marshall");
+
+  const issues = flags.map((flag) => ({
+    category: isCeo ? "Sourcing" : flag.severity === "medium" ? "Neutrality" : "Sourcing",
+    severity: flag.severity,
+    title: flag.label,
+    detail: flag.description,
+    suggested_action: flag.action,
+  }));
+
+  if (isCeo) {
+    issues.push({
+      category: "Coverage",
+      severity: "medium",
+      title: "Expand independent career sourcing",
+      detail:
+        "The biography relies heavily on company-affiliated framing. Major press profiles and conference coverage would strengthen verifiability.",
+      suggested_action:
+        "Add citations from Reuters, STAT, or major trade publications for executive appointments and public statements.",
+    });
+  } else {
+    issues.push({
+      category: "Currency",
+      severity: "medium",
+      title: "Update recent financial disclosures",
+      detail:
+        "Revenue and pipeline references should cite the latest public filings or earnings releases rather than summary language alone.",
+      suggested_action:
+        "Add an inline citation to the most recent quarterly results and separate historical milestones from current performance.",
+    });
+    issues.push({
+      category: "Structure",
+      severity: "low",
+      title: "Split pipeline and access programs",
+      detail:
+        "Product pipeline and patient access content would scan more clearly in separate sections with tighter lead sentences.",
+      suggested_action:
+        "Create distinct subsections for major therapeutic areas and move access-program details out of the company overview lead.",
+    });
+  }
+
+  return {
+    quality_tier: isCeo ? "c" : "start",
+    assessment: isCeo
+      ? "The executive biography covers core career milestones but needs stronger independent sourcing and tighter neutral tone for a living-person article."
+      : "The corporate article gives a readable overview of Best Pharma Co., but citation gaps and promotional phrasing keep it below Good article quality.",
+    issues,
+  };
+}
+
+export function isDemoArticleReview(title: string): boolean {
+  return isDemoArticleTitle(title);
+}

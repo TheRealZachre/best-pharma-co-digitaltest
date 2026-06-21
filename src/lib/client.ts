@@ -11,7 +11,7 @@ export const CEO = {
   linkedinSlug: "elena-marshall",
   xHandle: "ElenaMarshallBP",
   wikipediaUrl: "https://en.wikipedia.org/wiki/Elena_Marshall_(executive)",
-  photoUrl: "/brand/ceo-placeholder.svg",
+  photoUrl: "/brand/elena-marshall.png",
 };
 
 export const WIKIPEDIA = {
